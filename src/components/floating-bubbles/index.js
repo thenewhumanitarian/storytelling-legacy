@@ -40,7 +40,11 @@ function FloatingBubbles(props) {
     })
   }, [src])
 
-  const relevantData = data.filter(el => el.group === group)
+  let relevantData = data
+
+  if (group !== 'all') {
+    relevantData = data.filter(el => el.group === group)
+  }
 
   const clickHandler = i => {
     setCurrentActive(i)
