@@ -62,12 +62,6 @@ function FloatingBubbles(props) {
     )
   }
 
-  // const spring = {
-  //   type: 'spring',
-  //   damping: 15,
-  //   stiffness: 100
-  // }
-
   const spin = {
     scale: [1, 1, 1.5, 1, 1.1],
     rotate: [0, 0, 10, -10, 0],
@@ -103,7 +97,7 @@ function FloatingBubbles(props) {
         style={{
           paddingTop: `${100}%`
         }}
-        initial={{ y: 0 }}
+        // initial={{ y: 0 }}
         animate={{
           y: currentActive > 0 ? null : [0, 5, -5, 0],
           rotate: currentActive > 0 ? null : [0, 2, -2, 0, 0]
@@ -111,7 +105,7 @@ function FloatingBubbles(props) {
         transition={{
           repeat: Infinity,
           duration: 2,
-          delay: i * 0.15
+          delay: i * 0.2
         }}
         onClick={() => clickHandler(i)}
       >
@@ -145,7 +139,7 @@ function FloatingBubbles(props) {
     return (
       <div
         className={
-          'flex flex-col justify-center items-start w-full h-full absolute top-0 left-0 cursor-pointer'
+          'flex flex-col justify-center items-start w-full h-full absolute top-0 left-0 cursor-pointer p-8 sm:p-20'
         }
       >
         <h1 className={'text-5xl mb-8'}>{data.full_name}</h1>
@@ -168,7 +162,9 @@ function FloatingBubbles(props) {
     <div data-iframe-height={true}>
       {relevantData ? (
         <div
-          className={`relative grid grid-cols-${mobileCols} sm:grid-cols-${desktopCols} ${group === 'all' ? 'w-full' : 'w-4/5'} mx-auto my-8`}
+          className={`relative grid grid-cols-${mobileCols} sm:grid-cols-${desktopCols} ${
+            group === 'all' ? 'w-full' : 'w-4/5'
+          } mx-auto my-8`}
         >
           {relevantData.map((el, i) => {
             return (
@@ -183,9 +179,9 @@ function FloatingBubbles(props) {
           })}
           {currentActive >= 0 && (
             <div
-              className={
-                `${group === 'all' ? 'm-10' : 'm-4'} w-full h-full absolute top-0 left-0 bg-white bg-opacity-95 flex justify-center items-center`
-              }
+              className={`${
+                group === 'all' ? 'm-0' : 'm-4'
+              } w-full h-full absolute top-0 left-0 bg-white bg-opacity-95 flex justify-center items-center`}
               onClick={() => setCurrentActive(-1)}
             >
               <OverlayContent data={relevantData[currentActive]} />
