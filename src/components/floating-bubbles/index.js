@@ -168,7 +168,7 @@ function FloatingBubbles(props) {
     <div data-iframe-height={true}>
       {relevantData ? (
         <div
-          className={`relative grid grid-cols-${mobileCols} sm:grid-cols-${desktopCols} w-4/5 mx-auto my-8`}
+          className={`relative grid grid-cols-${mobileCols} sm:grid-cols-${desktopCols} ${group === 'all' ? 'w-full' : 'w-4/5'} mx-auto my-8`}
         >
           {relevantData.map((el, i) => {
             return (
@@ -184,7 +184,7 @@ function FloatingBubbles(props) {
           {currentActive >= 0 && (
             <div
               className={
-                'm-4 w-full h-full absolute top-0 left-0 bg-white bg-opacity-95 flex justify-center items-center'
+                `${group === 'all' ? 'm-10' : 'm-4'} w-full h-full absolute top-0 left-0 bg-white bg-opacity-95 flex justify-center items-center`
               }
               onClick={() => setCurrentActive(-1)}
             >
