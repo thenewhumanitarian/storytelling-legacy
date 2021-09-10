@@ -27,7 +27,7 @@ jobs:
         with:
           server: ftp.fahrenheit.sui-inter.net
           username: tnh
-          password: bre5mgc4dtw1gjc@EVE
+          password: ${FTP_PASSWORD}
           local-dir: build/
           server-dir: embeddables/
 
@@ -37,6 +37,6 @@ jobs:
         with:
           server: ftp.fahrenheit.sui-inter.net
           username: tnh
-          password: bre5mgc4dtw1gjc@EVE
+          password: ${FTP_PASSWORD}
           local-dir: build/
-          server-dir: embeddables/
+          server-dir: staging/
