@@ -1,0 +1,225 @@
+.homepage-masthead {
+  position: relative;
+
+  @media #{$breakpoint-small-medium} {
+    padding: 1rem;
+    background-color: $color-faint;
+  }
+
+  .slick-prev {
+    display: none !important; // sass-lint:disable-line no-important
+
+    @media #{$breakpoint-small-medium} {
+      display: block;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+    position: absolute;
+    top: 18rem;
+    left: 5rem;
+    cursor: pointer;
+
+    @media #{$breakpoint-medium} {
+      top: auto;
+      bottom: 5rem;
+    }
+
+    @media #{$breakpoint-small-medium} {
+      bottom: 3rem;
+      left: 4rem;
+    }
+
+    @media #{$breakpoint-small} {
+      left: 3rem;
+    }
+
+    li {
+      flex: 1;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+
+    button {
+      border: none;
+      background-color: $color-border;
+      text-indent: -999rem;
+      height: 1rem;
+      width: 100%;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .slick-active button {
+      background-color: $color-primary;
+    }
+  }
+
+  // Little trick to force fade on mobile
+
+  .slick-slide .teaser-masthead__banner {
+    opacity: 0.01;
+    transition: opacity 1s ease-out;
+  }
+
+  .slick-active .teaser-masthead__banner {
+    opacity: 1;
+  }
+
+  @media #{$breakpoint-small} {
+    .article__overview {
+      padding-top: 6rem;
+    }
+  }
+}
+
+.homepage-masthead__prev-trigger {
+  position: absolute;
+  left: 1rem;
+  top: 60vw;
+  cursor: pointer;
+  user-select: none;
+  padding: 0;
+  width: 4rem;
+  height: 4rem;
+  background: $color-light url("../../images/arrow--black.svg") no-repeat 1.6rem center;
+  background-size: 10px;
+  transform: translateY(-100%) rotate(180deg);
+  z-index: 1;
+  text-indent: -999rem;
+  overflow: hidden;
+  visibility: hidden;
+
+  @media #{$breakpoint-small-medium} {
+    visibility: visible;
+  }
+}
+
+.homepage-masthead__next-trigger {
+  position: absolute;
+  right: 0;
+  width: 30rem;
+  background: rgba(0, 0, 0, .5);
+  color: $color-light;
+  padding: 2rem 5rem 2rem 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+
+  @media #{$breakpoint-medium} {
+    padding: 1rem 5rem 1rem 1rem;
+  }
+
+  @media #{$breakpoint-small-medium} {
+    padding: 0;
+    width: 4rem;
+    height: 4rem;
+    right: 1rem;
+    background: $color-light url("../../images/arrow--black.svg") no-repeat center;
+    background-size: 10px;
+    top: 60vw;
+    transform: translateY(-100%);
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 4rem;
+    background: url("../../images/arrow-white.svg") no-repeat center;
+    background-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.5rem;
+
+    @media #{$breakpoint-small-medium} {
+      display: none;
+    }
+  }
+}
+
+.homepage-masthead__next-text {
+  font-size: $font-size-small;
+  display: block;
+  margin-bottom: 1rem;
+
+  @media #{$breakpoint-small-medium} {
+    // Important used to override javascript behavior
+    display: none !important; // sass-lint:disable-line no-important
+  }
+}
+
+.homepage-masthead__next-title {
+  font-family: $font-family-serif-bold;
+  font-weight: $font-weight-semi-bold;
+  line-height: 1.4;
+
+  @media #{$breakpoint-small-medium} {
+    // important used to ensure precedence over jQuery functionality
+    display: none !important; // sass-lint:disable-line no-important
+  }
+}
+
+.masthead-list--item {
+  margin-bottom: $margin-medium;
+
+  a {
+    color: lighten($color-dark-off, 20%);
+    font-size: $font-size-base;
+    font-family: $font-family-serif-medium;
+    line-height: $lineheight-large;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-light;
+    }
+  }
+}
+
+.masthead__in-depth-list {
+  flex: 25% 0 0;
+  overflow-y: auto;
+  background: $color-dark-off;
+  color: $color-light-off;
+  padding: 3rem;
+  text-align: left;
+  max-height: 60vh;
+
+  a {
+    color: $color-faint;
+    font-size: $font-size-base;
+    font-family: $font-family-serif-medium;
+    line-height: $lineheight-large;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-light;
+    }
+  }
+
+  @media #{$breakpoint-medium-large} {
+    display: none;
+  }
+
+  .section__title {
+    color: $color-light;
+    font-size: $font-size-regular;
+    font-family: $font-family-text;
+    font-weight: $font-weight-semi-bold;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  @media #{$breakpoint-medium} {
+    display: none;
+  }
+}

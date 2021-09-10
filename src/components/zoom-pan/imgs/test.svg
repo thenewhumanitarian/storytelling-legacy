@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="1080px" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>test</title>
+    <g id="test" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1920" height="1080"></rect>
+        <g id="Group" transform="translate(81.000000, 129.000000)" fill="#D8D8D8">
+            <rect id="Rectangle" x="0" y="0" width="826" height="365"></rect>
+            <rect id="Rectangle-Copy-2" x="0" y="457" width="826" height="365"></rect>
+            <rect id="Rectangle-Copy" x="932" y="0" width="826" height="365"></rect>
+            <rect id="Rectangle-Copy-3" x="932" y="457" width="826" height="365"></rect>
+        </g>
+    </g>
+</svg>

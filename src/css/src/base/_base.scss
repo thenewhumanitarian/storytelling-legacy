@@ -1,0 +1,89 @@
+* {
+  box-sizing: inherit;
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  // sass-lint:disable no-vendor-prefixes
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $color-dark;
+  overflow-x: hidden;
+
+  @media #{$breakpoint-small} {
+    font-size: $font-size-smaller;
+  }
+}
+
+.logo--small {
+  display: inline-block;
+  width: 8rem;
+  height: 3.4rem;
+  background: url("../../images/logo-small--white.svg") no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+  text-indent: -999rem;
+
+  @media #{$breakpoint-small} {
+    width: 4rem;
+    height: 1.7rem;
+  }
+}
+
+.button {
+  @include button;
+}
+
+.button--secondary {
+  background-color: $color-dark-off;
+
+  &:hover,
+  &:focus {
+    background-color: $color-dark;
+  }
+}
+
+.button--inline {
+  position: relative;
+  background-color: $color-brand-primary;
+  font-size: $font-size-medium-large;
+  padding: $padding-small;
+  color: $color-light;
+  border: 0.2rem solid white;
+  font-weight: $font-weight-bold;
+  text-align: center;
+
+  img {
+    position: absolute;
+    left: 1rem;
+    width: 2.5rem;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: darken($color-primary, 5%);
+  }
+
+  @media #{$breakpoint-small} {
+    border: none;
+  }
+}
+
+.button--large {
+  padding: 1.5rem 4rem;
+  font-size: $font-size-regular;
+  line-height: 2rem;
+}

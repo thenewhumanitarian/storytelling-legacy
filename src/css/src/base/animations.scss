@@ -1,0 +1,48 @@
+.typist-border {
+  border-right: none;
+  border-color: #9f3e52;
+  animation: blink-caret-default 1s step-end infinite;
+  text-align: left;
+
+  &.right {
+    border-left: none;
+    padding-right: 2rem;
+    border-right: 0.5rem solid;
+  }
+
+  &.mint {
+    animation: blink-caret-mint 1s step-end infinite;
+  }
+
+  &.mint {
+    animation: blink-caret-mint 1s step-end infinite;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret-default {
+  0% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #9f3e52;
+  }
+}
+@keyframes blink-caret-mint {
+  0% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #35b58b;
+  }
+}
+@keyframes blink-caret-orange {
+  0% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #eb762d;
+  }
+}

@@ -1,0 +1,26 @@
+.team-member {
+  margin-bottom: 5rem;
+}
+
+.team-member__name {
+  width: 100%;
+
+  @media #{$breakpoint-small} {
+    text-align: center;
+  }
+}
+
+.team-member__image {
+  width: 20rem;
+  float: left;
+  margin: 0 2rem 1rem 0;
+
+  @media #{$breakpoint-small} {
+    float: none;
+    margin: 2rem auto;
+  }
+}
+
+.team-member__social {
+  font-style: italic;
+}

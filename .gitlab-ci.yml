@@ -1,0 +1,79 @@
+# This file is a template, and might need editing before it works on your project.
+# Official framework image. Look for the different tagged releases at:
+# https://hub.docker.com/r/library/node/tags/
+image: node:11
+
+variables:
+  # TODO: change slug to fit your project
+  # Change for different languages...
+  SLUG: 'embeddables'
+
+  # the following variables don't need changing, as a rule
+  BUILD_DIR: 'build/'
+  GIT_DEPTH: '1'
+
+stages:
+  - test
+  - deploy
+  - flushcache
+
+cache: &cache
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+# executed before each job
+before_script:
+  - yarn install --ignore-engines
+
+# Test Job
+# Currently only executed on request
+# Maybe it would be a good idea to have a project wide test suite that does
+# some quality control before a project is being deployed on production?
+test:
+  stage: test
+  when: manual
+  script:
+    - yarn test
+
+# Deploy Job Template
+.deploy:
+  variables:
+    STAGING_PREFIX: 'staging/'
+  stage: deploy
+  environment:
+    name: staging
+    url: https://embed.thenewhumanitarian.org/$STAGING_PREFIX$SLUG
+  script:
+    - apt-get update -qq && apt-get install -y -qq lftp chromium
+    - yarn run build
+    - lftp -c "set ftp:ssl-allow no; set net:timeout 5; set net:max-retries 2; set net:reconnect-interval-base 5; open -u $DEPLOY_USER, $DEPLOY_PASS $DEPLOY_HOST; mirror -Rev $BUILD_DIR $STAGING_PREFIX$SLUG --parallel=10 --verbose"
+    - echo "deployment complete"
+
+deploy_staging:
+  extends: .deploy
+  only:
+    - master
+
+deploy_production:
+  extends: .deploy
+  only:
+    - /^production.*/
+  environment:
+    name: production
+  variables:
+    STAGING_PREFIX: ''
+
+flushcache:
+  image: docker:stable
+  stage: flushcache
+  only:
+    - /^production.*/
+    - /^master.*/
+  before_script:
+    - apk add --update curl && rm -rf /var/cache/apk/*
+  script:
+    - |
+      curl --fail --output "/dev/null" --silent --show-error -X POST "https://api.cloudflare.com/client/v4/zones/$CF_ZONE_ID/purge_cache" \
+      -H "Authorization: Bearer $CF_API_TOKEN" -H "Content-Type: application/json" \
+      --data '{"files":[{"url":"https://embed.thenewhumanitarian.org","url":"http://embed.thenewhumanitarian.org","url":"https://staging.thenewhumanitarian.org","url":"http://staging.thenewhumanitarian.org"}]}'

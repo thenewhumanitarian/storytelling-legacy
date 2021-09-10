@@ -1,0 +1,38 @@
+.fixed {
+  overflow-y: hidden;
+}
+
+.breakpoint-indicator {
+  display: none;
+}
+
+@media #{$breakpoint-medium} {
+  .breakpoint-indicator[data-size="medium"] {
+    display: block;
+  }
+}
+
+@media #{$breakpoint-small-medium} {
+  .breakpoint-indicator[data-size="small-medium"] {
+    display: block;
+  }
+}
+
+.readmore {
+  font-family: $font-family-serif-medium;
+  color: #a03c50;
+  text-align: center;
+  font-size: inherit;
+  margin: 4rem auto !important;
+
+  > a:not([class]) {
+    color: #a03c50 !important;
+    border-bottom: 1px solid #a03c50 !important;
+    line-height: 1.25;
+
+    &:hover {
+      background: #a03c50 !important;
+      color: white !important;
+    }
+  }
+}

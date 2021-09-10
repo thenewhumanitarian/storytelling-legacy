@@ -1,0 +1,33 @@
+div#zoom-pan {
+  .overlay-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    background: #F3F3F3;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.4;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

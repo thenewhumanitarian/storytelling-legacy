@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2243px" height="1261px" viewBox="0 0 2243 1261" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>anniversary-graphic</title>
+    <g id="anniversary-graphic" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="years" transform="translate(301.000000, -2.000000)">
+            <g id="bars" transform="translate(68.000000, 0.000000)" fill="#000000" fill-opacity="0.05">
+                <rect id="Rectangle" x="0" y="0" width="74" height="1261"></rect>
+                <rect id="Rectangle-Copy-2" x="150" y="0" width="74" height="1261"></rect>
+                <rect id="Rectangle-Copy-3" x="300" y="0" width="74" height="1261"></rect>
+                <rect id="Rectangle-Copy-4" x="450" y="0" width="74" height="1261"></rect>
+                <rect id="Rectangle-Copy-5" x="600" y="0" width="74" height="1261"></rect>
+                <rect id="Rectangle-Copy-6" x="750" y="0" width="74" height="1261"></rect>
+                <rect id="Rectangle-Copy-7" x="900" y="0" width="74" height="1261"></rect>
+                <rect id="Rectangle-Copy-8" x="1050" y="0" width="74" height="1261"></rect>
+                <rect id="Rectangle-Copy-9" x="1200" y="0" width="74" height="1261"></rect>
+                <rect id="Rectangle-Copy-10" x="1350" y="0" width="74" height="1261"></rect>
+                <rect id="Rectangle-Copy-11" x="1500" y="0" width="74" height="1261"></rect>
+                <rect id="Rectangle-Copy-12" x="1650" y="0" width="74" height="1261"></rect>
+                <rect id="Rectangle-Copy-13" x="1800" y="0" width="74" height="1261"></rect>
+            </g>
+            <g id="numbers" transform="translate(0.000000, 573.000000)">
+                <g id="year" transform="translate(75.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="1995" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">1995</tspan>
+                    </text>
+                </g>
+                <g id="year-copy" transform="translate(150.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="1996" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">1996</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-25">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="1996" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">1996</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-2" transform="translate(225.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="1997" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">1997</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-3" transform="translate(300.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="1998" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">1998</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-4" transform="translate(375.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="1999" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">1999</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-5" transform="translate(450.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2000" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2000</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-6" transform="translate(525.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2001" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2001</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-7" transform="translate(600.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2002" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2002</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-8" transform="translate(675.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2003" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2003</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-9" transform="translate(750.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2004" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2004</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-10" transform="translate(825.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2005" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2005</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-11" transform="translate(900.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2006" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2006</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-12" transform="translate(975.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2007" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2007</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-13" transform="translate(1050.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2008" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2008</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-14" transform="translate(1125.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2009" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2009</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-15" transform="translate(1200.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2010" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2010</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-16" transform="translate(1275.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2011" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2011</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-17" transform="translate(1350.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2012" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2012</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-18" transform="translate(1425.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2013" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2013</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-19" transform="translate(1500.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2014" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2014</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-20" transform="translate(1575.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2015" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2015</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-21" transform="translate(1650.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2016" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2016</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-22" transform="translate(1725.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2017" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2017</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-23" transform="translate(1800.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2018" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2018</tspan>
+                    </text>
+                </g>
+                <g id="year-copy-24" transform="translate(1875.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="32"></rect>
+                    <text id="2019" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#FFFFFF">
+                        <tspan x="5.25585938" y="24">2019</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+        <g id="categories" transform="translate(18.000000, 48.000000)">
+            <g id="Group" transform="translate(20.000000, 0.000000)">
+                <rect id="1" fill="#E9B3FF" x="0" y="0" width="237" height="75"></rect>
+                <text id="Militarisation-of-Ai" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#000000">
+                    <tspan x="21.3481445" y="45">Militarisation of Aid</tspan>
+                </text>
+            </g>
+            <g id="colin-powell" transform="translate(726.000000, 0.000000)">
+                <rect id="Rectangle" fill="#E9B3FF" x="0" y="0" width="75" height="75"></rect>
+                <text id="Colin-Powell:-“force" font-family="Roboto-Regular, Roboto" font-size="10" font-weight="normal" fill="#000000">
+                    <tspan x="8.95263672" y="26">Colin Powell: </tspan>
+                    <tspan x="23.7646484" y="37" font-family="Roboto-Bold, Roboto" font-weight="bold">“force </tspan>
+                    <tspan x="13.9575195" y="48" font-family="Roboto-Bold, Roboto" font-weight="bold">multiplier”</tspan>
+                </text>
+            </g>
+            <g id="sergio-de-melio" transform="translate(952.000000, 0.000000)">
+                <rect id="Rectangle" fill="#E9B3FF" x="0" y="0" width="73" height="75"></rect>
+                <text id="Sergio-de-Melio-and" font-family="Roboto-Bold, Roboto" font-size="10" font-weight="bold" fill="#000000">
+                    <tspan x="15.1743164" y="25">Sergio de </tspan>
+                    <tspan x="23.9389648" y="36">Melio</tspan>
+                    <tspan x="49.0610352" y="36" font-family="Roboto-Regular, Roboto" font-weight="normal"> </tspan>
+                    <tspan x="9.70800781" y="47" font-family="Roboto-Regular, Roboto" font-weight="normal">and 22 staff </tspan>
+                    <tspan x="24.8569336" y="58" font-family="Roboto-Regular, Roboto" font-weight="normal">killed</tspan>
+                </text>
+            </g>
+            <g id="Group-Copy" transform="translate(138.000000, 147.000000)">
+                <rect id="Rectangle" fill="#A09DBB" x="0" y="0" width="119" height="75"></rect>
+                <text id="#AidToo" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#000000">
+                    <tspan x="18.8037109" y="45">#AidToo</tspan>
+                </text>
+            </g>
+            <g id="stc-and-unhcr" transform="translate(801.000000, 147.000000)">
+                <rect id="Rectangle" fill="#A09DBB" x="0" y="0" width="74" height="75"></rect>
+                <text id="StC-and-UNHCR-“sex-f" font-family="Roboto-Regular, Roboto" font-size="10" font-weight="normal" fill="#000000">
+                    <tspan x="19.6098633" y="27">StC and </tspan>
+                    <tspan x="20.2958984" y="38">UNHCR </tspan>
+                    <tspan x="9.578125" y="49" font-family="Roboto-Bold, Roboto" font-weight="bold">“sex for aid”</tspan>
+                </text>
+            </g>
+            <g id="un-comprehensive" transform="translate(1101.000000, 147.000000)">
+                <rect id="Rectangle" fill="#A09DBB" x="0" y="0" width="74" height="75"></rect>
+                <text id="2005:-UN-Comprehensi" font-family="Roboto-Bold, Roboto" font-size="10" font-weight="bold" fill="#000000">
+                    <tspan x="16.0698242" y="19">2005:</tspan>
+                    <tspan x="41.8413086" y="19" font-family="Roboto-Regular, Roboto" font-weight="normal"> UN </tspan>
+                    <tspan x="2.41992188" y="30" font-family="Roboto-Regular, Roboto" font-weight="normal">Comprehensive </tspan>
+                    <tspan x="13.3476562" y="41" font-family="Roboto-Regular, Roboto" font-weight="normal">strategy to </tspan>
+                    <tspan x="16.5678711" y="52" font-family="Roboto-Regular, Roboto" font-weight="normal">eliminate </tspan>
+                    <tspan x="23.4916992" y="63" font-family="Roboto-Regular, Roboto" font-weight="normal">abuse</tspan>
+                </text>
+            </g>
+            <g id="policy-reforms" transform="translate(62.000000, 441.000000)" fill="#000000">
+                <rect id="Rectangle" fill-opacity="0.2" x="0" y="0" width="195" height="75"></rect>
+                <text id="Policy-Reforms" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold">
+                    <tspan x="22.605957" y="45">Policy Reforms</tspan>
+                </text>
+            </g>
+            <g id="humanitarian-reform-process" transform="translate(1033.000000, 441.000000)">
+                <rect id="Rectangle" fill="#CCCCCC" x="0" y="0" width="209" height="75"></rect>
+                <text id="2005:-Out-of-failure" font-family="Roboto-Bold, Roboto" font-size="14" font-weight="bold" fill="#000000">
+                    <tspan x="86.4599609" y="26">2005:</tspan>
+                    <tspan x="122.540039" y="26" font-size="10"></tspan>
+                    <tspan x="22.6274414" y="42" font-family="Roboto-Regular, Roboto" font-size="10" font-weight="normal">Out of failures of tsunami and Darfur, </tspan>
+                    <tspan x="12.6811523" y="53" font-family="Roboto-Regular, Roboto" font-size="10" font-weight="normal">Humanitarian Response Review launched </tspan>
+                    <tspan x="14.3413086" y="64" font-family="Roboto-Regular, Roboto" font-size="10" font-weight="normal">leading to Humanitarian Reform Process</tspan>
+                </text>
+            </g>
+            <g id="accountability" transform="translate(20.000000, 649.000000)">
+                <rect id="Rectangle" fill-opacity="0.5" fill="#2EAC00" x="0" y="0" width="237" height="75"></rect>
+                <text id="Accountability" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#000000">
+                    <tspan x="47.7954102" y="45">Accountability</tspan>
+                </text>
+            </g>
+            <g id="localisation" transform="translate(20.000000, 796.000000)">
+                <rect id="Rectangle" fill-opacity="0.5" fill="#2DB487" x="0" y="0" width="237" height="75"></rect>
+                <text id="Localisation" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#000000">
+                    <tspan x="58.7900391" y="45">Localisation</tspan>
+                </text>
+            </g>
+            <g id="drr-and-anticipatory" transform="translate(20.000000, 943.000000)">
+                <rect id="Rectangle" fill-opacity="0.5" fill="#FFD635" x="0" y="0" width="237" height="75"></rect>
+                <text id="DRR-&amp;-Anticipatory-a" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#000000">
+                    <tspan x="25.0273438" y="35">DRR &amp; Anticipatory </tspan>
+                    <tspan x="88.3525391" y="60">action</tspan>
+                </text>
+            </g>
+            <g id="nexus-prevention" transform="translate(20.000000, 1090.000000)">
+                <rect id="Rectangle" fill-opacity="0.5" fill="#F0781E" x="0" y="0" width="237" height="75"></rect>
+                <text id="Nexus-/-Prevention" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold" fill="#000000">
+                    <tspan x="24.8017578" y="45">Nexus / Prevention</tspan>
+                </text>
+            </g>
+            <g id="protection-of-civilians" transform="translate(0.000000, 294.000000)">
+                <g>
+                    <rect id="Rectangle" fill="#D09DA7" x="0" y="0" width="257" height="75"></rect>
+                    <text id="Protection-of-Civili" fill="#000000" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="22" font-weight="bold">
+                        <tspan x="20.1767578" y="45">Protection of Civilians</tspan>
+                    </text>
+                </g>
+                <g id="no-invervention" transform="translate(276.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#D09DA7" x="0" y="0" width="149" height="75"></rect>
+                    <text id="No-invertention" fill="#000000" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="15" font-weight="bold">
+                        <tspan x="22.4394531" y="41">No invertention</tspan>
+                    </text>
+                </g>
+                <g id="kofi-anan-we-the-peoples" transform="translate(725.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#D09DA7" x="0" y="0" width="76" height="75"></rect>
+                    <text id="Kofi-Anan-“We-the-pe" fill="#000000" fill-rule="nonzero" font-family="Roboto-Regular, Roboto" font-size="15" font-weight="normal">
+                        <tspan x="5.86132812" y="20">Kofi Anan </tspan>
+                        <tspan x="11.8049316" y="38" font-family="Roboto-Bold, Roboto" font-weight="bold">“We the </tspan>
+                        <tspan x="8.29663086" y="56" font-family="Roboto-Bold, Roboto" font-weight="bold">peoples”</tspan>
+                    </text>
+                </g>
+                <g id="r2p-report-released" transform="translate(801.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#D09DA7" x="0" y="0" width="74" height="75"></rect>
+                    <text id="R2P-Report-Released" fill="#000000" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="15" font-weight="bold">
+                        <tspan x="23.072998" y="25">R2P</tspan>
+                        <tspan x="50.927002" y="25" font-family="Roboto-Regular, Roboto" font-weight="normal"> </tspan>
+                        <tspan x="14.7526855" y="43" font-family="Roboto-Regular, Roboto" font-weight="normal">Report </tspan>
+                        <tspan x="6.46533203" y="61" font-family="Roboto-Regular, Roboto" font-weight="normal">Released</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+        <g id="events" transform="translate(301.000000, 612.000000)">
+            <g id="rwanda-genocide">
+                <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="75"></rect>
+                <text id="Rwanda-Genocide" font-family="Roboto-Bold, Roboto" font-size="10" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="12.6557617" y="36">Rwanda</tspan>
+                    <tspan x="9.31103516" y="47">Genocide</tspan>
+                </text>
+            </g>
+            <g id="srebenica" transform="translate(75.000000, 0.000000)">
+                <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="75"></rect>
+                <text id="Srebenica" font-family="Roboto-Bold, Roboto" font-size="10" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="8.01464844" y="41">Srebenica</tspan>
+                </text>
+            </g>
+            <g id="september-11" transform="translate(525.000000, 0.000000)">
+                <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="75"></rect>
+                <text id="September-11" font-family="Roboto-Bold, Roboto" font-size="10" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="5.84667969" y="36">September </tspan>
+                    <tspan x="24.7626953" y="47">11</tspan>
+                </text>
+            </g>
+            <g id="sex-scandal" transform="translate(600.000000, 0.000000)">
+                <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="75"></rect>
+                <text id="Sex-Scandal" font-family="Roboto-Bold, Roboto" font-size="10" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="2.94873047" y="41">Sex Scandal</tspan>
+                </text>
+            </g>
+            <g id="canal-hotel-bombing" transform="translate(675.000000, 0.000000)">
+                <rect id="Rectangle" fill="#413C78" x="0" y="0" width="60" height="75"></rect>
+                <text id="Canal-Hotel-Bombing" font-family="Roboto-Bold, Roboto" font-size="10" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="4.41845703" y="36">Canal Hotel </tspan>
+                    <tspan x="10.3583984" y="47">Bombing</tspan>
+                </text>
+            </g>
+        </g>
+        <g id="lines" transform="translate(329.250000, 83.750000)" fill-rule="nonzero">
+            <path id="Line" d="M0.5,333.75 L7.54541741,347.727199 L1.545,347.746 L1.99999473,487.746753 L2.00324147,488.746748 L0.0032520068,488.753241 L5.27066165e-06,487.753247 L-0.454,347.753 L-6.4545088,347.772653 L0.5,333.75 Z" fill="#D09DA7"></path>
+            <path id="Line-Copy" d="M75.5,333.75 L82.5454174,347.727199 L76.545,347.746 L76.9999947,487.746753 L77.0032415,488.746748 L75.003252,488.753241 L75.0000053,487.753247 L74.545,347.753 L68.5454912,347.772653 L75.5,333.75 Z" fill="#D09DA7"></path>
+            <path id="Line-Copy-3" d="M452.25,333.75 L459.295417,347.727199 L453.295,347.746 L453.749995,487.746753 L453.753241,488.746748 L451.753252,488.753241 L451.750005,487.753247 L451.295,347.753 L445.295491,347.772653 L452.25,333.75 Z" fill="#413C78"></path>
+            <path id="Line-Copy-6" d="M527.5,186.25 L534.549252,200.225265 L528.549,200.246 L528.749994,257.246479 L528.753515,258.246473 L526.753527,258.253515 L526.750006,257.253521 L526.549,200.253 L520.549339,200.274561 L527.5,186.25 Z" fill="#413C78"></path>
+            <path id="Line-Copy-7" d="M775.75,142.25 L789.75,149.25 L775.75,156.25 L775.75,150.25 L564.75,150.25 L564.75,148.25 L775.75,148.25 L775.75,142.25 Z" fill="#413C78"></path>
+            <path id="Line-Copy-4" d="M453.25,39.75 L460.217945,53.7659816 L454.218,53.751 L453.749997,258.252288 L453.747709,259.252286 L451.747714,259.247709 L451.750003,258.247712 L452.218,53.747 L446.217982,53.7339451 L453.25,39.75 Z" fill="#413C78"></path>
+            <path id="Line-Copy-5" d="M626.75,-5.75 L640.75,1.25 L626.75,8.25 L626.75,2.25 L489.75,2.25 L489.75,0.25 L626.75,0.25 L626.75,-5.75 Z" fill="#E9B3FF"></path>
+            <path id="Line-Copy-2" d="M399.773391,290.203411 L413.75,297.25 L399.726764,304.203334 L399.746,298.203 L113.496669,297.249994 L112.496675,297.246664 L112.503336,295.246675 L113.503331,295.250006 L399.753,296.203 L399.773391,290.203411 Z" fill="#D09DA7"></path>
+        </g>
+    </g>
+</svg>

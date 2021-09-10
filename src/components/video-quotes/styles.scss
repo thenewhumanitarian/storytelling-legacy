@@ -1,0 +1,82 @@
+/* Styles for Typist Component */
+
+.video-slider {
+  ::selection {
+    background: none;
+  }
+}
+
+.video-slider-container {
+  background-color: black;
+  min-height: 56.25vw;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+div.slick-track {
+  margin-top: 0;
+}
+
+div.video-slider div.slick-slide {
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+
+  margin-top: -2rem;
+
+  div {
+    img {
+      position: absolute;
+      border-radius: 50%;
+      object-fit: cover;
+      bottom: 0;
+      left: 10%;
+      width: 80%;
+      height: 80%;
+      // border: 3px solid #9f3e52;
+      // border-left: 0.5rem solid #9f3e52;
+    }
+  }
+  a {
+    pointer-events: none;
+  }
+  .ui.big.labels .label, .ui.big.label {
+    font-family: 'Roboto', sans-serif;
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+  &.slick-current {
+    opacity: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    a {
+      pointer-events: inherit;
+    }
+    div {
+      img {
+        // border-left: 0.5rem solid #9f3e52;
+        @media screen and (max-width: 500px) {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+  &:not(.slick-current) {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: 0.3;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

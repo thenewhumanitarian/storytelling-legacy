@@ -1,0 +1,48 @@
+.consent-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.consent-banner__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+
+  @media #{$breakpoint-small} {
+    flex-direction: column;
+  }
+
+  p {
+    color: $color-light;
+    margin-bottom: 0;
+    margin-right: 1rem;
+
+    @media #{$breakpoint-small} {
+      margin-bottom: 2rem;
+      margin-right: 0;
+    }
+
+    a:not([class]) {
+      color: $color-light;
+      text-decoration: underline;
+    }
+  }
+
+  .button {
+    width: 30rem;
+    padding: 2rem 3rem;
+
+    @media #{$breakpoint-small} {
+      width: 100%;
+    }
+  }
+}

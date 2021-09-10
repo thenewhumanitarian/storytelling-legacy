@@ -1,0 +1,183 @@
+.view-advanced-search,
+.view-advanced-search-reports {
+  @include wrapper;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  @media #{$breakpoint-small} {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .view-header {
+    flex: 100% 0 0;
+  }
+
+  .view-title {
+    border-top: 0.2rem solid $color-border;
+    padding: 1.5rem 0 3rem;
+
+    @media #{$breakpoint-small} {
+      padding: 1rem 0 2rem;
+      font-size: $font-size-base;
+    }
+  }
+
+  .view-filters {
+    flex-basis: 25%;
+    max-width: 30rem;
+    padding-right: 2rem;
+
+    @media #{$breakpoint-medium-large} {
+      flex-basis: 30%;
+    }
+
+    @media #{$breakpoint-medium} {
+      flex-basis: 100%;
+      max-width: 100%;
+      padding-right: 0;
+      padding-bottom: 3rem;
+    }
+
+    &.mobile-filters-active {
+      .exposed-form-mobile-trigger::after {
+        background-image: url("../../images/icon-minus.svg");
+      }
+
+      .exposed-form__open-text {
+        display: none;
+      }
+
+      .exposed-form__close-text {
+        display: block;
+      }
+
+      .views-exposed-form {
+        display: block;
+      }
+    }
+
+    form {
+      background-color: $color-faint;
+      padding: 1.5rem 1rem;
+    }
+
+    .exposed-form-mobile-trigger {
+      position: relative;
+      cursor: pointer;
+      font-weight: $font-weight-bold;
+      font-size: $font-size-small;
+      height: 2rem;
+      line-height: 2rem;
+
+      @media #{$breakpoint-medium} {
+        display: block;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: $color-light url("../../images/icon-plus.svg") no-repeat center;
+        background-size: 70%;
+      }
+    }
+
+    .exposed-form__close-text {
+      display: none;
+    }
+
+    .views-exposed-form {
+
+      @media #{$breakpoint-medium} {
+        display: none;
+        margin-top: 2rem;
+      }
+    }
+
+    .views-exposed-widget {
+      margin-bottom: 1.5rem;
+    }
+
+    .views-widget-per-page {
+      border-top: 0.1rem solid $color-faint;
+      padding-top: 1rem;
+    }
+
+    .views-submit-button {
+      margin-top: 2rem;
+      margin-bottom: 0;
+    }
+
+    label {
+      margin-bottom: 0.5rem;
+    }
+
+    .description {
+      margin-top: 0.5rem;
+    }
+
+    select,
+    input {
+      width: 100%;
+    }
+  }
+
+  .view-content {
+    flex-basis: 75%;
+
+    @media #{$breakpoint-medium-large} {
+      flex-basis: 70%;
+    }
+
+    @media #{$breakpoint-medium} {
+      flex-basis: 100%;
+    }
+  }
+
+  .teaser-list--grid > li {
+    max-width: 33%;
+    flex-basis: 33%;
+
+    @media #{$breakpoint-medium-large} {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    @media #{$breakpoint-small} {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .item-list {
+    width: 100%;
+  }
+}
+
+// Few jqueryUI datepicker overrides
+// sass-lint:disable no-ids
+#ui-datepicker-div {
+  padding: 0.5rem 0.5rem 0;
+  background: $color-light;
+  border: 0.1rem solid $color-light-off;
+}
+
+.ui-widget-header {
+  background: $color-brand-primary;
+  color: $color-light;
+  border: none;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  color: $color-dark;
+}

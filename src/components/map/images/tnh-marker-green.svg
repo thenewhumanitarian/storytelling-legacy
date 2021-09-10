@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="40px" viewBox="0 0 27 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>tnh-marker-green</title>
+    <desc>Created with Sketch.</desc>
+    <g id="tnh-marker-green" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="np_map-marker_888711_000000" fill-rule="nonzero">
+            <path d="M13.5,0 C6.01485732,0 0,6.12407752 0,13.750525 C0,21.3745725 13.5,40 13.5,40 C13.5,40 27,21.3745725 27,13.750525 C27,6.12407752 20.9851427,0 13.5,0 Z M13.4859045,19.9810248 C10.0505262,19.9810248 7.34911243,17.2318798 7.34911243,13.7303498 C7.34911243,10.2312198 10.0481699,7.4796748 13.4859045,7.4796748 C16.9212828,7.4796748 19.6226965,10.2288198 19.6226965,13.7303498 C19.6226965,17.2318198 16.9213417,19.9810248 13.4859045,19.9810248 Z" id="Shape" fill="#2DB487"></path>
+            <circle id="Oval" fill="#FFFFFF" cx="13.5" cy="13.5" r="6.5"></circle>
+        </g>
+    </g>
+</svg>

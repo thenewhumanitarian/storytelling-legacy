@@ -1,0 +1,153 @@
+// Not outline for links
+a {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+h1 {
+  @include heading-1;
+}
+
+h2 {
+  @include heading-2;
+
+  &.section__title {
+    text-align: center;
+    margin: 4rem 0;
+  }
+}
+
+h3 {
+  @include heading-3;
+}
+
+p {
+  @include text;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+em {
+  font-style: italic;
+}
+
+blockquote {
+  border-left: 0.5rem solid $color-theme-primary;
+  padding-left: 4.5rem;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-family: $font-family-serif-medium;
+  font-size: $font-size-large;
+  line-height: $lineheight-large;
+
+  @media #{$breakpoint-small} {
+    font-family: $font-family-serif-regular;
+    font-size: $font-size-medium-large;
+    border-left-width: 0.3rem;
+    padding-left: 2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  p:not([class]) {
+    font-family: $font-family-serif-medium;
+    font-size: $font-size-large;
+    line-height: $lineheight-large;
+    margin: 0;
+    color: #000;
+
+    @media #{$breakpoint-small} {
+      font-family: $font-family-serif-regular;
+      font-size: $font-size-medium-large;
+    }
+  }
+}
+
+.tab {
+  display: inline-block;
+  font-family: $font-family-base;
+  font-size: $font-size-small;
+  line-height: 2rem;
+  font-weight: $font-weight-bold;
+  color: $color-light;
+  background-color: $color-primary;
+  padding: 0 0.5rem;
+
+  @media #{$breakpoint-small} {
+    font-size: $font-size-smallest;
+    line-height: 1.8rem;
+  }
+
+  &[data-report-theme="Environment and Disasters"] {
+    background-color: $color-theme-env;
+  }
+
+  &[data-report-theme="Aid and Policy"] {
+    background-color: $color-theme-aid;
+  }
+
+  &[data-report-theme="Migration"] {
+    background-color: $color-theme-migration;
+  }
+
+  &[data-report-theme="Conflict"] {
+    background-color: $color-theme-conflict;
+  }
+}
+
+.article__body,
+.content__bulk,
+.chapter,
+.typeography {
+  a:not([class]) {
+    color: $color-text;
+    text-decoration: none;
+    font-weight: $font-weight-semi-bold;
+    border-bottom: 1px solid $color-text;
+
+    &:hover {
+      background: $color-text;
+      color: $color-light;
+    }
+  }
+
+  h2,
+  h4 {
+    color: #000;
+  }
+
+  h3 {
+    color: $color-brand-primary;
+  }
+}
+
+.flow {
+  > * + * {
+    margin-top: $margin-medium;
+  }
+
+  h2:not(:first-child),
+  h3:not(:first-child) {
+    margin-top: 5rem;
+  }
+
+  h3+h2:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  blockquote {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .incase-you {
+    margin: 2rem 0;
+  }
+}

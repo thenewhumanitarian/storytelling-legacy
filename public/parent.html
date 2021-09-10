@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Test Iframe</title>
+</head>
+    <body>
+        <h1>This is a test document</h1>
+        <p>Bacon ipsum dolor amet t-bone corned beef jowl, turducken alcatra pork bresaola. Brisket meatball venison kevin hamburger shoulder beef flank drumstick. Alcatra tongue spare ribs ham. Bacon t-bone turkey pastrami. Drumstick ham pork corned beef venison kielbasa tail, prosciutto rump porchetta turducken turkey. Fatback rump ground round shankle chicken bacon meatloaf burgdoggen beef ribs brisket.</p>
+        <iframe frameborder="0" height="600" scrolling="no" src="http://marcfehr.ch/tnh/embeddables/quote" style="width: 100%; height: 600px; overflow: hidden;" width="100%"></iframe>
+        <p>Tongue drumstick cow beef ribs. Pig swine venison shankle capicola tail frankfurter tongue beef ribs sausage pastrami meatball. Tail ham hock buffalo, turducken shank spare ribs biltong flank. Meatloaf beef ribs shank ham hock pancetta, rump turkey ham filet mignon hamburger strip steak tenderloin landjaeger. Fatback kevin pastrami, drumstick leberkas sirloin chicken sausage kielbasa short ribs beef pork chop landjaeger corned beef frankfurter. Short loin turducken filet mignon ground round tongue. Jerky frankfurter prosciutto ground round, turducken ball tip drumstick tri-tip tenderloin cow boudin.</p>
+        <script src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+        <!-- Parts to be implemented on the parent side -->
+        <!-- Script version 3.6.5 on marcfehr.ch -->
+        <script>
+            $('iframe').iFrameResize([{ heightCalculationMethod: 'taggedElement', checkOrigin: false, log: true }])
+        </script>
+        <script src='http://marcfehr.ch/tnh/helpers/iframeResizer.js'></script>
+        <!-- Waiting for document to be ready then look for taggedElement in iframes to dictate the height based on lowest element -->
+    </body>
+</html>

@@ -1,0 +1,22 @@
+path {
+  opacity: 0.8;
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+    color: white;
+  }
+  &.active {
+    fill: #9f3e52;
+    stroke: #000;
+    stroke-width: 4px;
+    opacity: 1;
+    fill-opacity: 1;
+  }
+  &.inactive {
+    opacity: 1;
+  }
+}
+
+text {
+  pointer-events: none;
+}

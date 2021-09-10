@@ -1,0 +1,102 @@
+.site-footer {
+  text-align: center;
+  padding: 4rem 2rem;
+  position: relative;
+  background-color: #FFF;
+
+  @media #{$breakpoint-medium} {
+    padding: 4rem 2rem 10rem;
+  }
+}
+
+.site-footer__logo {
+  font-size: 0;
+  display: inline-block;
+  width: 15rem;
+  height: 4rem;
+  background-image: url("../../images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-indent: -999rem;
+  text-decoration: none;
+  overflow: hidden;
+  margin: 0 auto 4rem;
+
+  @media #{$breakpoint-small-medium} {
+    margin: 0 auto 2rem;
+  }
+}
+
+.site-footer__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media #{$breakpoint-small-medium} {
+    flex-direction: column;
+  }
+
+  a {
+    font-size: 1.4rem;
+    color: $color-dark;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  .menu {
+    display: flex;
+
+    @media #{$breakpoint-small-medium} {
+      flex-direction: column;
+      margin-bottom: 3rem;
+    }
+
+    li {
+      margin: 0 2rem;
+
+      @media #{$breakpoint-small-medium} {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+
+.site-footer__copy {
+  font-size: 1.4rem;
+  color: rgba($color-dark, 0.5);
+  position: absolute;
+  bottom: 4rem;
+  left: 3.5rem;
+
+  @media #{$breakpoint-medium} {
+    bottom: 2rem;
+    left: 2rem;
+  }
+}
+
+.site-footer__return-button {
+  width: 6rem;
+  height: 6rem;
+  background-image: url("../../images/icon-return.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: block;
+  outline: 0;
+  border: 0;
+  position: absolute;
+  right: 0;
+  bottom: 4rem;
+  cursor: pointer;
+  font-size: 0;
+  text-indent: -999rem;
+  overflow: hidden;
+
+  @media #{$breakpoint-medium} {
+    bottom: 2rem;
+  }
+}

@@ -1,0 +1,77 @@
+// Social link buttons
+
+.sb {
+  display: flex;
+}
+
+.sb__item {
+  font-size: 0;
+  text-indent: -999rem;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  margin: 0 1.5rem;
+
+  a {
+    width: 3rem;
+    height: 1.5rem;
+    display: block;
+  }
+}
+
+.sb__item--twitter {
+  background-image: url("../../images/icon-twitter.svg");
+}
+
+.sb__item--facebook {
+  background-image: url("../../images/icon-facebook.svg");
+}
+
+.sb__item--youtube {
+  background-image: url("../../images/icon-youtube.svg");
+}
+
+
+// Social share buttons
+
+.ss {
+  display: flex;
+}
+
+.ss__item {
+  width: 3rem;
+  height: 3rem;
+  font-size: 0;
+  text-indent: -999rem;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 70%;
+  margin: 1rem;
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+.ss__item--twitter {
+  background-image: url("../../images/icon-twitter.svg");
+  background-size: auto 50%;
+}
+
+.ss__item--facebook {
+  background-image: url("../../images/icon-facebook.svg");
+  background-size: auto 50%;
+}
+
+.ss__item--whatsapp {
+  background-image: url("../../images/icon-whatsapp.svg");
+  background-size: auto 50%;
+}
+
+.ss__item--email {
+  background-image: url("../../images/icon-email.svg");
+}

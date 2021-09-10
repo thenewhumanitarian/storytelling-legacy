@@ -1,0 +1,15 @@
+/* Styles for Zoom-Pan */
+
+div#zoom-pan {
+  min-height: 56.25vw;
+  height: 100vh;
+  background: #F3F3F3;
+
+  .stage-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+}

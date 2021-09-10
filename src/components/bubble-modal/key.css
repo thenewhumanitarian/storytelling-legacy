@@ -1,0 +1,21 @@
+
+.key-card {
+  text-align: center;
+  margin-top: 15px;
+  width: 260px;
+  box-shadow: 3px 3px 20px rgba(70,101,160,.164);
+  padding: 1rem;
+  margin: auto;
+  font-family: Roboto, sans-serif;
+}
+
+.key-card button {
+  font-family: 'Roboto', sans-serif;
+  color: #a03c50;
+}
+
+@media only screen and (max-width: 600px) {
+  .key-card {
+    margin-bottom: 8rem;
+  }
+}

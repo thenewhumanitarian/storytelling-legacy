@@ -1,0 +1,131 @@
+.bubble-modal {
+  @for $i from 0 through 30 {
+    .bubble-#{$i} {
+      animation-delay: $i * 0.3s;
+    }
+  }
+
+  .floating {
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    // margin-left: 30px;
+    margin-top: 5px;
+    padding: 15;
+    box-shadow: 3px 3px 20px rgba(45, 66, 105, 0.4);
+    transition: transform 0.2s; /* Animation */
+    border-radius: 200px;
+    height: 52px;
+    width: 52px;
+
+    color: white;
+
+    border: none;
+    position: absolute;
+
+    /* Hover class for the buttons to show hand icon */
+    &:hover {
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+    }
+  }
+
+  .floating,
+  .floating2 {
+    height: 55px;
+    width: 55px;
+
+    @media screen and (max-width: 350px) {
+      width: 48px;
+      height: 48px;
+    }
+
+    /* If the elements have these colour classes, colour them accordingly... */
+    &.mint {
+      background-color: #2db487;
+    }
+
+    &.orange {
+      background-color: #f0781e;
+    }
+
+    &.burgundy {
+      background-color: #a03c50;
+    }
+
+    /* Hover class for the buttons to show hand icon */
+    /* Also using vibrate animation to highlight the hover state: */
+    &:hover {
+      cursor: pointer;
+      -webkit-animation: vibrate-1 0.3s linear infinite both;
+      animation: vibrate-1 0.3s linear infinite both;
+    }
+  }
+
+  @keyframes floating {
+    from {
+      transform: translate(0, 0px);
+    }
+    65% {
+      transform: translate(0, 5px);
+    }
+    to {
+      transform: translate(0, -0px);
+    }
+  }
+
+  .floating2 {
+    animation-name: floating;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 15px;
+    padding: 15;
+    box-shadow: 3px 3px 20px rgba(45, 66, 105, 0.4);
+    transition: transform 0.8s; /* Animation */
+    border-radius: 200px;
+    color: white;
+    border: none;
+
+    /* Hover class for the buttons to show hand icon */
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 500px) {
+      margin-left: 0;
+    }
+  }
+
+  @keyframes floating2 {
+    from {
+      transform: translate(-60, -0px);
+    }
+    65% {
+      transform: translate(20, 30px);
+    }
+    to {
+      transform: translate(-0, 0px);
+    }
+  }
+
+  .ui.modal > .content > .description {
+    max-width: 100%;
+    max-height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    * {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.5;
+    }
+  }
+
+  .modals.dimmer .ui.scrolling.modal {
+    width: 90%;
+    padding: 0;
+  }
+}

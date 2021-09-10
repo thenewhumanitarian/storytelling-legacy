@@ -1,0 +1,44 @@
+// sass-lint:disable no-qualifying-elements
+
+.messages {
+  color: $color-light;
+
+  &.status {
+    background-color: $color-message-success;
+  }
+
+  &.warning {
+    background-color: $color-message-warn;
+  }
+
+  &.error {
+    background-color: $color-message-error;
+  }
+
+  li {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: $color-light;
+    font-weight: $font-weight-bold;
+    text-decoration: underline;
+  }
+}
+
+section.messages {
+  max-width: 160rem;
+  margin: 1rem auto 0;
+}
+
+div.messages {
+  padding: 2rem 3.5rem;
+}
+
+.messages .messages {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,578 @@
+// Donate styles
+
+.donate-banner--top {
+  background: $color-donate;
+  padding: 12px 0;
+  width: 100%;
+
+  @media #{$breakpoint-small} {
+    padding: 10px;
+  }
+
+  .wrapper {
+    padding: 0 20px;
+
+    @media #{$breakpoint-small} {
+      padding: 0;
+    }
+  }
+
+  .btn {
+    float: right;
+    margin-left: 40px;
+    padding: 10px 40px;
+
+    @media #{$breakpoint-small} {
+      float: none;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      padding: 5px;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 17px;
+
+    @media #{$breakpoint-small} {
+      display: none;
+    }
+  }
+}
+
+.donate-banner--homepage-mid {
+  position: relative;
+  background: $color-donate;
+  padding: 40px 50px 40px 55%;
+  padding-left: calc(50% + 40px);
+  width: 100%;
+  margin: 40px 0 80px;
+  color: $color-brand-primary;
+
+  @media #{$breakpoint-small} {
+    padding: 70vw 40px 50px 40px;
+    padding-top: calc(60vw + 30px);
+  }
+
+  .donate-banner__image {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    // background: url("../../images/donate-banner--homepage-mid.jpg") no-repeat center;
+    background-size: cover;
+
+    @media #{$breakpoint-small} {
+      width: 100%;
+      height: 60vw;
+    }
+  }
+
+  h2 {
+    font-size: $font-size-medium;
+    line-height: $lineheight-large;
+    margin-bottom: 20px;
+    font-family: $font-family-serif-regular;
+    font-weight: $font-weight-bold;
+    color: $color-dark-off;
+    word-wrap: break-word;
+  }
+}
+
+.donate-banner--footer {
+  width: 50%;
+  padding-left: 20px;
+  color: #fff;
+
+  @media #{$breakpoint-medium} {
+    width: 80%;
+    padding: 0;
+  }
+
+  @media #{$breakpoint-small} {
+    width: 100%;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #fff;
+    max-width: 75%;
+    margin-bottom: 20px;
+    font-weight: $font-weight-semi-bold;
+
+    @media #{$breakpoint-small} {
+      max-width: 100%;
+    }
+  }
+
+  .btn {
+    padding: 14px 25px;
+  }
+}
+
+// Support page
+
+.page-node-259378 {
+
+  .global-header {
+    margin-bottom: 0;
+  }
+
+  .donate-banner--top {
+    display: none;
+  }
+
+  .main-wrapper {
+    max-width: 100%;
+  }
+
+  .main-content {
+    @media #{$breakpoint-large} {
+      padding: 0;
+    }
+  }
+}
+
+.support-page__header {
+  position: relative;
+  background: $color-donate;
+
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    clear: both;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: $color-brand-primary;
+  }
+}
+
+.support-page__intro {
+  color: $color-dark-off;
+  background-size: auto 90%;
+  padding: 100px 50px 150px 0;
+  width: 50%;
+
+  @media #{$breakpoint-large} {
+    padding-left: 20px;
+  }
+
+  @media #{$breakpoint-medium} {
+    width: 100%;
+    padding: 50px;
+  }
+
+  @media #{$breakpoint-small} {
+    width: 100%;
+    padding: 50px 20px 30px;
+  }
+
+  h1 {
+    margin-bottom: $margin-large;
+  }
+}
+
+.support-page__banner {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../../images/support-banner.jpg") no-repeat center;
+  background-size: cover;
+
+  @media #{$breakpoint-medium} {
+    position: static;
+    width: 100%;
+    height: 60vw;
+  }
+}
+
+.support-page__paypal {
+  margin: -120px auto 40px;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  padding: 50px;
+  color: $color-dark-off;
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+  font-family: $font-family-text;
+
+  @media #{$breakpoint-medium} {
+    width: 90%;
+    margin-top: -40px;
+  }
+
+  @media #{$breakpoint-small} {
+    padding: 30px 20px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-family: $font-family-text;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-family: $font-family-text;
+    font-weight: $font-weight-bold;
+  }
+
+  .explanation {
+    max-width: 75%;
+    margin: 0;
+    font-size: $font-size-regular;
+    line-height: $lineheight-regular;
+
+    @media #{$breakpoint-small} {
+      max-width: 100%;
+    }
+  }
+}
+
+// Donate form
+
+.currency-toggle {
+  float: right;
+  appearance: none;
+  background: $color-light url("../../images/form-arrow@2x.png") no-repeat center right 15px;
+  cursor: pointer;
+  background-size: 1.2rem;
+  padding: 1.4rem 4rem 1.4rem 1.4rem;
+  border-radius: 0;
+  outline: 0;
+  color: $color-dark-off;
+  border: .2rem solid $color-light-off;
+  font-size: 1.6rem;
+  transition: all .2s ease-in-out;
+
+  @media #{$breakpoint-small} {
+    float: none;
+    margin-bottom: 20px;
+  }
+}
+
+.paypal-option {
+  padding-top: 20px;
+
+  &.single {
+    padding-bottom: 20px;
+    border-bottom: 1px solid darken($color-light-off, 10%);
+  }
+}
+
+.donate-toggle {
+  display: none;
+  margin-right: 10px;
+}
+
+.donate-toggle.active {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.donate-amount {
+  color: $color-dark;
+  border: 2px solid $color-light-off;
+  font-size: $font-family-text;
+  font-weight: $font-weight-bold;
+  padding: 12px 18px;
+  width: 100px;
+  text-align: center;
+  background: $color-light;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-light-off;
+    color: $color-light;
+  }
+
+  &.active {
+    border-color: $color-brand-primary;
+    background-color: $color-brand-primary;
+    color: #fff;
+  }
+
+  @media #{$breakpoint-small} {
+    margin-bottom: 10px;
+    padding: 12px 12px;
+    width: auto;
+  }
+}
+
+.js-own-amount {
+  display: block;
+  margin-top: 20px;
+
+  [type="submit"] {
+    background-color: $color-light;
+    border: 2px solid $color-brand-primary;
+    color: $color-brand-primary;
+    padding: 10px 20px;
+    font-size: $font-size-small;
+    opacity: 0.7;
+    transition: opacity 100ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.support-page__body {
+  max-width: 70rem;
+  line-height: $lineheight-regular;
+  font-weight: $font-weight-regular;
+  margin: 40px auto;
+
+  @media #{$breakpoint-medium} {
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-family: $font-family-serif-medium;
+    text-align: left;
+    font-size: $font-size-medium-large;
+    margin: 50px 0 20px;
+  }
+
+  blockquote {
+    float: none;
+    width: 100%;
+    max-width: 70rem;
+    margin: 7rem auto 3rem;
+    background: $color-light;
+    padding-left: 4.5rem;
+    text-align: left;
+
+    p {
+      font-size: $font-size-large;
+      line-height: 1.2;
+      margin: 0;
+
+      @media #{$breakpoint-small} {
+        font-size: $font-size-medium-large;
+      }
+    }
+
+    strong {
+      display: block;
+      padding-top: 2rem;
+      font-size: 1.6rem;
+      color: #666;
+      font-weight: $font-weight-regular;
+      font-family: $font-family-text;
+    }
+
+    @media #{$breakpoint-small} {
+      padding-left: $padding-medium;
+    }
+  }
+
+  ul {
+    background: $color-primary;
+    padding: 50px 40px;
+    color: $color-light;
+    list-style: none;
+    margin-bottom: 40px;
+    display: table;
+
+    @media #{$breakpoint-small} {
+      padding: 30px 20px;
+    }
+
+    li {
+      background: url("../../images/bullet--round.svg") no-repeat left top;
+      background-size: 2.5rem 2.5rem;
+      padding: 0 0 20px 60px;
+      max-width: 95%;
+      line-height: 140%;
+      margin-bottom: 0;
+
+      @media #{$breakpoint-small} {
+        padding-left: 40px;
+      }
+    }
+  }
+
+  ol {
+    background: $color-light;
+    padding: 50px 40px;
+    list-style: none;
+
+    @media #{$breakpoint-small} {
+      padding: 30px 20px;
+    }
+
+    li {
+      color: $color-dark-off;
+      counter-increment: step-counter;
+      position: relative;
+      padding: 0 0 20px 60px;
+      max-width: 95%;
+      margin-bottom: 0;
+      font-size: $font-size-regular;
+
+      @media #{$breakpoint-small} {
+        padding-left: 40px;
+      }
+    }
+
+    li:before {
+      content: counter(step-counter);
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      border: 1px solid $color-dark-off;
+      line-height: 2.5rem;
+      text-align: center;
+      color: $color-theme-conflict;
+      font-size: $font-size-small;
+      font-weight: $font-weight-semi-bold;
+    }
+  }
+}
+
+.support-page__badges {
+  background: $color-brand-primary;
+  color: white;
+  padding: 30px 0 60px;
+  margin: 70px 0 100px;
+  text-align: center;
+
+  h2 {
+    font-family: $font-family-serif-regular;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0 40px;
+
+    @media #{$breakpoint-small} {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  ul {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    @media #{$breakpoint-small-medium} {
+      margin-bottom: 20px;
+    }
+  }
+
+  li {
+    width: 12.6%;
+    margin: 0 2%;
+    padding-top: 10%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-color: $color-light;
+    font-size: 0;
+
+    @media #{$breakpoint-small-medium} {
+      width: 29%;
+      margin-bottom: 20px;
+      padding-top: 30%;
+    }
+
+    @media #{$breakpoint-small} {
+      width: 46%;
+    }
+
+    &[rel="geneva-engage"] {
+      background-image: url("../../images/award-geneva-engage.png");
+    }
+
+    &[rel="one-world-media"] {
+      background-image: url("../../images/award-one-world-media.png");
+    }
+
+    &[rel="unca"] {
+      background-image: url("../../images/award-unca.jpg");
+    }
+
+    &[rel="global-media-competition"] {
+      background-image: url("../../images/award-global-media-competition.png");
+    }
+
+    &[rel="migration-media"] {
+      background-image: url("../../images/award-migration-media.png");
+    }
+
+    &[rel="sopa"] {
+      background-image: url("../../images/award-sopa.png");
+    }
+  }
+  @media #{$breakpoint-small} {
+    padding: 30px 0;
+    margin: 50px auto 70px auto;
+  }
+}
+
+.support-page__footnote {
+  text-align: center;
+  margin: 50px 0;
+  padding-bottom: 50px;
+  @media #{$breakpoint-small} {
+    padding-bottom: 20px;
+  }
+}
+
+.js-paypal-button {
+  display: inline-block;
+}
+
+.js-paypal-button [type="submit"],
+.donate-button {
+  color: $color-brand-primary;
+  background-size: 1.8rem;
+  background: $color-light url("../../images/paypal--blue.svg") no-repeat 25px center;
+  padding: 1.3rem 1.8rem 1.3rem 5rem;
+  font-family: $font-family-text;
+  font-weight: $font-weight-bold;
+  font-size: 1.5rem;
+  border: 2px solid $color-brand-primary;
+  cursor: pointer;
+  text-decoration: none;
+  will-change: border;
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    border: 2px solid #009be1;
+    color: #1b5c98;
+  }
+
+  &:focus,
+  &:active {
+    background-color: lighten($color-donate, 10%);
+  }
+}

@@ -1,0 +1,139 @@
+[type="color"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+textarea,
+[multiple],
+select {
+  appearance: none;
+  font-family: $font-family-text;
+  font-size: $font-size-base;
+  padding: 1rem;
+  border-radius: 0;
+  box-shadow: none;
+  outline: 0;
+  border: 0.2rem solid $color-border;
+
+  &:focus {
+    border-color: $color-brand-primary;
+  }
+}
+
+select {
+  background-image: url("../../images/arrow-down.svg");
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+label {
+  font-family: $font-family-text;
+  font-weight: $font-weight-bold;
+  margin-bottom: 1rem;
+  display: block;
+  font-size: $font-size-small;
+}
+
+.description {
+  font-size: $font-size-small;
+  margin-top: 1rem;
+  color: rgba($color-dark, 0.5);
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type="submit"],
+.form-submit {
+  @include button;
+  appearance: none;
+}
+
+.page-user {
+
+  .support-strip {
+    display: none;
+  }
+
+  form {
+    max-width: 50rem;
+    margin: auto;
+    padding: 10rem 2rem;
+  }
+
+  .form-item {
+    margin-bottom: 2rem;
+  }
+
+  [type="text"],
+  [type="email"],
+  [type="password"] {
+    width: 100%;
+  }
+}
+
+.exposed-form-mobile-trigger {
+  display: none;
+}
+
+#autocomplete { //sass-lint:disable-line no-ids
+  background: $color-light;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.2rem solid $color-light;
+  color: $color-dark;
+  font-family: $font-family-base;
+  font-size: $font-size-regular;
+  line-height: $lineheight-regular;
+
+  li {
+    padding: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-faint;
+      color: $color-dark;
+    }
+  }
+}
+
+.form-type-date-popup {
+  label {
+    display: none;
+  }
+}
+
+.form-checkboxes {
+  margin-top: 1rem;
+}
+
+.form-type-bef-checkbox {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+
+  input {
+    width: auto !important; //sass-lint:disable-line no-important
+    margin: 0 1rem 0 0;
+  }
+
+  label {
+    font-weight: $font-weight-regular;
+    margin: 0;
+  }
+}

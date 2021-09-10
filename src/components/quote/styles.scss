@@ -1,0 +1,27 @@
+/* Styles for Quote Component */
+
+div#quote-component {
+  &.inverted {
+    background: #282828;
+    color: white;
+  }
+  div.quote-text {
+    width: 100%;
+    max-width: 940px;
+    padding: 2em 0;
+    margin: 0 auto;
+    &.orange-border {
+      p {
+        border-left: 0.5rem solid #eb762d;
+      }
+    }
+    p {
+      font-size: 2.6rem;
+      width: 100%;
+      font-family: 'GT Sectra Medium', serif;
+      margin: 0;
+      padding: 0 0 0 4.5rem;
+      line-height: 125%;
+    }
+  }
+}

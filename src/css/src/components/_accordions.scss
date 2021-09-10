@@ -1,0 +1,106 @@
+.accordion:not(.slick) {
+  margin: $margin-large 0;
+  border-top: .3rem solid $color-dark;
+  border-bottom: .3rem solid $color-dark;
+
+  &__trigger {
+    text-align: center;
+    padding: 4rem;
+    font-size: $font-size-medium-large;
+    font-family: $font-family-serif-medium;
+    cursor: pointer;
+
+    &:after {
+      content: "\002B";
+      font-family: $font-family-base;
+      font-weight: $font-weight-regular;
+      font-size: $font-size-large;
+      vertical-align: baseline;
+      margin-left: $margin-small;
+    }
+
+    &.active:after {
+      content: "\2212";
+    }
+  }
+
+  &__content {
+    display: none;
+    padding-bottom: 4rem;
+
+    p:not([class]) {
+      font-size: $font-size-regular;
+      line-height: $lineheight-regular;
+      margin-bottom: 2em;
+
+      @media #{$breakpoint-small} {
+        font-size: $font-size-smaller;
+      }
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+}
+
+.accordion {
+  position: relative;
+  margin: 0;
+  border-top: 0;
+  border-bottom: .1rem solid $color-dark;
+
+  &__trigger {
+    text-align: left;
+    padding: $padding-small $padding-small $padding-small $padding-large;
+    font-size: $font-size-medium-large;
+    font-family: $font-family-serif-medium;
+    cursor: pointer;
+
+    &.active {
+      border-radius: 2px;
+      background: rgba(0,0,0,.1);
+    }
+
+    &:after {
+      content: "\002B";
+      font-family: $font-family-base;
+      font-weight: $font-weight-regular;
+      font-size: $font-size-large;
+      vertical-align: baseline;
+      margin-left: $margin-small;
+      position: absolute;
+      left: 0;
+      top: 0.8rem;
+    }
+
+    &.active:after {
+      content: "\2212";
+    }
+  }
+
+  &__content {
+    display: none;
+    padding: $padding-small $padding-medium;
+
+    p:not([class]) {
+      font-size: $font-size-regular;
+      line-height: $lineheight-regular;
+      margin-bottom: $margin-small;
+
+      @media #{$breakpoint-small} {
+        font-size: $font-size-smaller;
+      }
+    }
+
+    &.active {
+      border-radius: 2px;
+      background: rgba(0,0,0,.1);
+      display: block;
+    }
+  }
+}
+
+.accordion--open-bottom {
+  border-bottom: none;
+}

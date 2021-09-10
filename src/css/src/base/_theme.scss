@@ -1,0 +1,93 @@
+@mixin colour-scheme($color-theme-primary) {
+
+  .theme-color {
+    color: $color-theme-primary;
+    text-decoration: none;
+  }
+
+  .column.border-left,
+  .column.border-right {
+    border-color: $color-theme-primary;
+  }
+
+  .column.theme-color {
+    background: $color-theme-primary;
+    color: $color-light;
+  }
+
+  blockquote {
+    border-left-color: $color-theme-primary;
+  }
+
+  .teaser__content {
+    border-color: $color-theme-primary;
+  }
+
+  .article__header:before {
+    background-color: $color-theme-primary;
+  }
+
+  &.teaser-masthead:before {
+    background-color: $color-theme-primary;
+  }
+
+  .author-info__image {
+    border-color: $color-theme-primary;
+  }
+
+  .article__body h3 {
+    color: $color-theme-primary;
+  }
+
+  .article__body h3 a {
+    color: $color-theme-primary;
+    border-bottom: 2px solid $color-theme-primary;
+
+    &:hover {
+      background: $color-theme-primary;
+    }
+  }
+
+  .teaser-overlay__theme {
+    background-color: $color-theme-primary;
+  }
+
+  .teaser-list--scroller .slick-active button {
+    background-color: $color-theme-primary;
+  }
+
+  .article__body .media-element-container .field-name-field-credit,
+  .article__author-note {
+    border-left: 0.5rem solid $color-theme-primary;
+  }
+
+  .article__body .nameheader {
+    color: $color-theme-primary;
+  }
+
+  .article__body .question,
+  .article__body .namecredit {
+    color: $color-theme-primary;
+  }
+
+  .wysiwyg-read-more__trigger span {
+    color: $color-theme-primary;
+  }
+}
+
+// Create the themes.
+[data-theme="theme-aid"] {
+  @include colour-scheme($color-theme-aid);
+}
+
+[data-theme="theme-conflict"] {
+  @include colour-scheme($color-theme-conflict);
+}
+
+[data-theme="theme-environment"] {
+  @include colour-scheme($color-theme-env);
+}
+
+[data-theme="theme-migration"] {
+  @include colour-scheme($color-theme-migration);
+}

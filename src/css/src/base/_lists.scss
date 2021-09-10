@@ -1,0 +1,47 @@
+.content__bulk,
+.article__content {
+
+  ul {
+    list-style: disc inside;
+
+    &:not(.ss) {
+      margin-bottom: 3rem;
+    }
+
+    &.bullet-box {
+      background: #f2f2f2;
+      padding: 2rem;
+      margin: 0 1.5rem 2.5rem 1.5rem;
+    }
+  }
+
+  li {
+    @include text;
+    margin-bottom: 1rem;
+    position: relative;
+
+    &.top-bullet {
+      list-style: none;
+
+      h3 {
+        margin: 0 0 1rem;
+      }
+    }
+
+    @media #{$breakpoint-small} {
+      font-size: $font-size-small;
+      line-height: $lineheight-medium;
+    }
+
+  }
+
+  .ss {
+    li {
+      a {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}

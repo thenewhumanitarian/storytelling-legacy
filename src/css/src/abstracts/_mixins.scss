@@ -1,0 +1,156 @@
+@mixin spread {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@mixin wrapper {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  @media #{$breakpoint-large} {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  @media #{$breakpoint-small} {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@mixin button {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  color: $color-light;
+  background-color: $color-primary;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-small;
+  text-align: center;
+  line-height: $lineheight-largest;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: darken($color-primary, 5%);
+  }
+}
+
+@mixin text-overlay--bottom {
+
+  &:after {
+    @include spread;
+    z-index: -1;
+    content: "";
+    display: block;
+    background: linear-gradient(180deg, rgba($color-dark, 0) 50%, rgba($color-dark, 0.4) 75%, rgba($color-dark, 0.6) 100%);
+  }
+}
+
+@mixin heading-1 {
+  font-size: $heading-1;
+  line-height: $heading-1-line;
+  letter-spacing: -0.44px;
+  font-family: $font-family-serif-bold;
+
+  @media #{$breakpoint-small} {
+    font-size: $heading-1-m;
+    line-height: $heading-1-line-m;
+    letter-spacing: -0.23px;
+  }
+}
+
+@mixin heading-2 {
+  font-size: $heading-2;
+  line-height: $heading-2-line;
+  letter-spacing: -0.23px;
+  font-family: $font-family-serif-bold;
+
+  @media #{$breakpoint-small} {
+    font-size: $heading-2-m;
+    line-height: $heading-2-line-m;
+    letter-spacing: 0;
+  }
+}
+
+@mixin heading-3 {
+  font-size: $heading-3;
+  line-height: $heading-3-line;
+  letter-spacing: -0.4px;
+  font-family: $font-family-serif-regular;
+
+  @media #{$breakpoint-small} {
+    font-size: $heading-3-m;
+    line-height: $heading-3-line-m;
+    letter-spacing: 0;
+  }
+}
+
+@mixin heading-4 {
+  font-size: $heading-4;
+  line-height: $heading-4-line;
+  font-family: $font-family-serif-bold;
+
+  @media #{$breakpoint-small} {
+    font-size: $heading-4-m;
+    line-height: $heading-4-line-m;
+  }
+}
+
+@mixin text {
+  font-size: $text;
+  line-height: $text-line;
+  font-family: $font-family-text;
+  color: $color-text;
+
+  @media #{$breakpoint-small} {
+    font-size: $text-m;
+    line-height: $text-line-m;
+  }
+}
+
+@mixin text-intro {
+  font-size: $intro;
+  line-height: $intro-line;
+  font-family: $font-family-serif-bold;
+  letter-spacing: -0.23px;
+  color: #000;
+
+  @media #{$breakpoint-small} {
+    font-size: $intro-m;
+    line-height: $intro-line-m;
+  }
+}
+
+@mixin caption {
+  font-size: $caption;
+  line-height: $caption-line;
+  font-family: $font-family-text;
+  color: $color-text;
+
+  @media #{$breakpoint-small} {
+    font-size: $caption-m;
+    line-height: $caption-line-m;
+  }
+}
+
+@mixin label {
+  font-size: $label;
+  line-height: $label-line;
+  font-family: $font-family-text;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  color: $color-label;
+  letter-spacing: -0.19px;
+
+  @media #{$breakpoint-small} {
+    font-size: $label-m;
+    line-height: $label-line-m;
+    letter-spacing: -0.18px;
+  }
+}

@@ -1,0 +1,134 @@
+// Set the base font-size to allow better rem usability.
+// 1rem = 10px, 1.5rem = 15px, 2rem = 20px etc.
+$font-family-base: "Roboto", sans-serif;
+$font-size-base: 1.6rem; // 16px
+
+// Font Families
+$font-family-text: $font-family-base;
+$font-family-serif-bold: "GT Sectra Bold", serif;
+$font-family-serif-regular: "GT Sectra Regular", serif;
+$font-family-serif-medium: "GT Sectra Medium", serif;
+
+$font-size-smallest: 1.1rem;
+$font-size-smaller: 1.2rem;
+$font-size-small: 1.4rem;
+$font-size-regular: 1.6rem;
+$font-size-medium: 2rem;
+$font-size-medium-large: 2.1rem;
+$font-size-large: 2.3rem;
+$font-size-largest: 3.6rem;
+
+// Font Weights & Examples
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 500;
+$font-weight-bold: 600;
+
+// Margins & Examples
+$margin-small: 1rem;
+$margin-medium: 2rem;
+$margin-large: 3rem;
+
+// Padding & Examples
+$padding-small: 1rem;
+$padding-medium: 2rem;
+$padding-large: 3rem;
+
+// Lineheights
+$lineheight-smallest: 1.25;
+$lineheight-smaller: 1.3;
+$lineheight-small: 1.8;
+$lineheight-medium: 1.7;
+$lineheight-regular: 2; // Use with regular font
+$lineheight-large: 1.25; // Use with large font;
+$lineheight-largest: 1.2; // Use with largest font;
+
+// Colors & Examples
+$color-brand-primary: #9f3e52; // Deep red
+$color-brand-secondary: #FFF;
+
+$color-dark: #000;
+$color-dark-off: #282828;
+$color-light: #FFF;
+$color-light-off: #999;
+$color-faint: rgba(#e6e6e6, 0.5);
+$color-light-transparent: rgba(255,255,255,.9);
+$color-primary: $color-brand-primary;
+$color-border: darken($color-light, 10%);
+
+$color-text: #63666A;
+$color-label: #C8C8C8;
+
+
+$color-message-error: #BD3D3A;
+$color-message-warn: #E47A2E;
+$color-message-success: #92B558;
+
+$color-theme-primary: $color-brand-primary;
+$color-theme-conflict: #3f4076; // Indigo
+$color-theme-migration: #35b58b; // Teal
+$color-theme-aid: #eb762d; // Orange
+$color-theme-env: #000; // Black
+$color-donate: $color-light; // Bright yellow
+
+// Headings & other
+
+$heading-1: 4.5rem;
+$heading-1-line: 1.111;
+$heading-1-m: 2.5rem;
+$heading-1-line-m: 1.133;
+
+$heading-2: 2.4rem;
+$heading-2-line: 1.25;
+$heading-2-m: 1.8rem;
+$heading-2-line-m: 1.277;
+
+$heading-3: 2.2rem;
+$heading-3-line: 1.181;
+$heading-3-m: 1.8rem;
+$heading-3-line-m: 1.277;
+
+$heading-4: 1.8rem;
+$heading-4-line: 1.277;
+$heading-4-m: 1.6rem;
+$heading-4-line-m: 1.25;
+
+$text: 1.9rem;
+$text-line: 1.421;
+$text-m: 1.4rem;
+$text-line-m: 1.642;
+
+$intro: 2.4rem;
+$intro-line: 1.25;
+$intro-m: 1.8rem;
+$intro-line-m: 1.277;
+
+$caption: 1.4rem;
+$caption-line: 1.142;
+$caption-m: 1.2rem;
+$caption-line-m: 1.166;
+
+$label: 2rem;
+$label-line: 1.2;
+$label-m: 1.8rem;
+$label-line-m: 1.166;
+
+// Breakpoints
+// We use EM for breakpoints to maintain consistency in all browsers.
+
+// 400px
+$breakpoint-x-small: "only screen and (max-width: 25em)";
+// 600px
+$breakpoint-small: "only screen and (max-width: 37.5em)";
+// 750px
+$breakpoint-small-medium: "only screen and (max-width: 46.875em)";
+// 980px (accounts for common 900px container + 2x40px gutters)
+$breakpoint-medium: "only screen and (max-width: 61.25em)";
+// 1200px
+$breakpoint-medium-large: "only screen and (max-width: 75em)";
+// 1300px
+$breakpoint-trans-nav: "only screen and (max-width: 81.25em)";
+// 1400px
+$breakpoint-large: "only screen and (max-width: 87.5em)";
+
+$breakpoint-small-height: "only screen and (max-height: 1050px) and (min-width: 37.5em)";

@@ -1,0 +1,355 @@
+.site-header {
+  width: 100vw;
+  height: 8rem;
+  background-color: $color-light;
+  border-bottom: 0.1rem solid $color-border;
+  padding: 2.25rem 3.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+
+  @media #{$breakpoint-small} {
+    height: 7rem;
+    padding: 0 2rem;
+  }
+}
+
+.site-header__left,
+.site-header__right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.site-header__left {
+  margin-right: auto;
+}
+
+.site-header__subscribe {
+  margin-left: 2rem;
+  padding: 0.8rem 1rem;
+  font-size: $font-size-small;
+
+  @media #{$breakpoint-small-medium} {
+    display: none;
+  }
+}
+
+.site-header__tagline {
+  font-family: $font-family-serif-bold;
+  font-size: $font-size-regular;
+  margin-right: $margin-small;
+  padding-bottom: 0.3em;
+
+  @media #{$breakpoint-medium} {
+    display: none;
+  }
+}
+
+.site-header__disclaimer {
+  display: none;
+  position: absolute;
+  width: 100%;
+  font-size: $font-size-small;
+  font-family: $font-family-serif-regular;
+  left: 0;
+  top: 7rem;
+
+  @media #{$breakpoint-small} {
+    top: 5rem;
+  }
+
+  a,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    color: $color-dark-off;
+  }
+
+  a:hover {
+    border-bottom: 1px solid $color-light-off;
+    background: $color-dark-off;
+    color: white;
+  }
+}
+
+.site-header__search,
+.site-header__menu {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  cursor: pointer;
+}
+
+.site-header__search {
+  width: 2.4rem;
+  height: 2rem;
+  background: url("../../images/icon-search.svg") no-repeat center;
+  background-size: 25px;
+}
+
+.site-header__menu {
+  width: 2.4rem;
+  height: 2rem;
+  background: url("../../images/icon-menu.svg") no-repeat center;
+  background-size: 22px;
+  z-index: 10;
+
+  &.active {
+    background-image: url("../../images/icon-menu-close.svg");
+    background-size: 18px;
+  }
+}
+
+.logo {
+  @include spread;
+  display: inline-block;
+  width: 16rem;
+  height: 4rem;
+  text-indent: -999rem;
+  text-decoration: none;
+  overflow: hidden;
+  margin: auto;
+  top: 0;
+
+  @media #{$breakpoint-small} {
+    background: url("../../images/logo.svg") no-repeat center;
+    background-size: contain;
+    width: 13.5rem;
+    top: 0.25rem;
+    height: 4rem;
+  }
+
+  svg {
+    display: block;
+
+    @media #{$breakpoint-small} {
+      display: none;
+    }
+  }
+}
+
+.main-menu-links {
+  background-color: $color-dark-off;
+  text-align: center;
+  font-size: 0;
+  margin-top: 8rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  @media #{$breakpoint-small} {
+    margin-top: 7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  li {
+    display: inline-block;
+    background: $color-brand-primary;
+
+    &:nth-last-child(-n+5) {
+      background: transparent;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: $font-size-regular;
+    line-height: $lineheight-smaller;
+    color: $color-border;
+    font-family: $font-family-serif-medium;
+
+    @media #{$breakpoint-small} {
+      padding: 1rem;
+      font-size: $font-size-small;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.global-header,
+.mobile-menu {
+  display: none;
+}
+
+.quick-links {
+  .links {
+    // sass-lint:disable no-vendor-prefixes
+    overflow: -moz-scrollbars-none; // sass-lint:disable-line no-vendor-prefixes
+    // sass-lint:disable no-vendor-prefixes
+    -ms-overflow-style: none; // sass-lint:disable-line no-vendor-prefixes
+  }
+
+  // sass-lint:disable no-vendor-prefixes
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media #{$breakpoint-small} {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    // Helps smoother scrolling on iOS devices
+    -webkit-overflow-scrolling: touch; // sass-lint:disable-line no-vendor-prefixes
+    // allows users of IE 10, 11 and Edge have a scrollbar to use on hover
+    -ms-overflow-style: -ms-autohiding-scrollbar; // sass-lint:disable-line no-vendor-prefixes
+
+    // improve the appearance further for Windows Chrome users
+    &::-webkit-overflow-scrolling { // sass-lint:disable-line no-vendor-prefixes
+      display: none;
+    }
+  }
+}
+
+.search-box {
+  width: 60rem;
+  position: absolute;
+  top: 5rem;
+  right: -2rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background: darken($color-light, 5%);
+  padding: 2rem;
+  display: none;
+
+  @media #{$breakpoint-small} {
+    width: 100vw;
+  }
+
+  &.active {
+    display: block;
+  }
+
+  &:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: .8rem solid transparent;
+    border-right: .8rem solid transparent;
+    border-bottom: .8rem solid darken($color-light, 5%);
+    position: absolute;
+    top: -.8rem;
+    right: 2.5rem;
+  }
+
+  .gsc-input {
+    position: relative;
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    padding: .4rem .7rem .4rem 0;
+    margin: 0;
+    height: auto;
+    width: 85%;
+
+    @media #{$breakpoint-small} {
+      width: 78%;
+    }
+  }
+
+  .gsc-control-cse {
+    padding: 0;
+    background: none;
+    border: none;
+  }
+
+  .gsc-results-wrapper-visible {
+    max-height: 60vh;
+    overflow-y: scroll;
+    padding: 0.6rem 1rem;
+    background: $color-light;
+  }
+
+  .gsc-control-wrapper-cse {
+    width: 100%;
+  }
+
+  td.gsc-search-button { // sass-lint:disable-line no-qualifying-elements
+    width: auto;
+
+    @media #{$breakpoint-small} {
+      width: 22%;
+    }
+  }
+
+  .gsst_b { // sass-lint:disable-line class-name-format
+    position: relative;
+  }
+
+  .gsst_a { // sass-lint:disable-line class-name-format
+    padding-top: 0;
+    position: absolute;
+    top: -0.4rem;
+    right: 1.6rem;
+  }
+
+  .gsc-thumbnail-inside {
+    text-align: left;
+  }
+
+  .gs-snippet {
+    margin-left: 20%;
+  }
+}
+
+.search-box__advanced-search {
+  text-align: left;
+  font-size: $font-size-small;
+  margin-top: 0.5rem;
+}
+
+.feedback-banner {
+  padding: 1rem 3rem;
+  background-color: $color-brand-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media #{$breakpoint-small} {
+    padding: 1rem 2rem;
+  }
+
+  p {
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+
+  p,
+  a:not([class]) {
+    color: $color-light;
+  }
+
+  a:not([class]) {
+    font-weight: $font-weight-bold;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.feedback-banner__button {
+  @include button;
+  background-color: $color-light;
+  color: $color-brand-primary;
+  margin-left: 2rem;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($color-light, 0.8);
+    color: $color-brand-primary;
+  }
+}

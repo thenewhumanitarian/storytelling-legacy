@@ -1,0 +1,237 @@
+.sidebar-panel {
+  background-color: $color-dark-off;
+  color: $color-light;
+  padding: 6rem;
+
+  @media #{$breakpoint-medium-large} {
+    padding: 6rem 3rem;
+  }
+  // sass-lint:disable no-vendor-prefixes
+  @media #{$breakpoint-medium} {
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.sidebar-panel--page {
+  width: 34rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: none;
+  color: $color-border;
+  z-index: 3;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.fixed {
+    .sidebar-menu--page {
+      position: fixed;
+      top: 8rem;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+
+      @media #{$breakpoint-medium} {
+        padding: 0;
+      }
+    }
+  }
+
+  &.absolute {
+    .sidebar-menu--page {
+      position: absolute;
+      top: unset;
+      bottom: 0;
+      height: calc(100vh - 8rem);
+      padding-top: 6rem;
+    }
+  }
+
+  @media #{$breakpoint-medium-large} {
+    width: 26rem;
+  }
+
+  @media #{$breakpoint-medium} {
+    width: 100%;
+    height: auto;
+    padding: 0;
+
+    &.fixed {
+      position: fixed;
+      top: 8rem;
+
+      .sidebar-menu--page {
+        position: relative;
+        top: 0;
+        width: auto;
+      }
+    }
+  }
+
+  @media #{$breakpoint-small} {
+    &.fixed {
+      top: 8rem;
+    }
+  }
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family-serif-medium;
+  font-size: $font-size-medium;
+  line-height: $lineheight-large;
+  color: $color-border;
+
+  @media #{$breakpoint-medium} {
+    max-width: none;
+    flex-direction: row;
+    flex: auto 0 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    // Helps smoother scrolling on iOS devices
+    -webkit-overflow-scrolling: touch; // sass-lint:disable-line no-vendor-prefixes
+    // allows users of IE 10, 11 and Edge have a scrollbar to use on hover
+    -ms-overflow-style: -ms-autohiding-scrollbar; // sass-lint:disable-line no-vendor-prefixes
+
+    // improve the appearance further for Windows Chrome users
+    &::-webkit-overflow-scrolling { // sass-lint:disable-line no-vendor-prefixes
+      display: none;
+    }
+  }
+
+  @media #{$breakpoint-small} {
+    font-size: $font-size-regular;
+  }
+}
+
+.sidebar-menu--page {
+  width: 20rem;
+  max-height: 100%;
+
+  overflow-y: scroll;
+  overflow-x: visible;
+
+  &::-webkit-scrollbar { // sass-lint:disable-line no-vendor-prefixes
+    display: none;
+  }
+
+  @media #{$breakpoint-medium} {
+    width: auto;
+    padding: 0 0 0 4rem;
+  }
+
+  @media #{$breakpoint-small} {
+    width: auto;
+    padding: 0 0 0 1rem;
+  }
+}
+
+.sidebar-menu--page a {
+  text-decoration: none;
+  font-size: $font-size-regular;
+  // line-height: $lineheight-smaller;
+  color: $color-border;
+  font-family: $font-family-serif-medium;
+
+  @media #{$breakpoint-small} {
+    font-size: $font-size-small;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-light;
+  }
+
+  &.active-scroll {
+    color: $color-light;
+    text-decoration: none;
+  }
+}
+
+.sidebar-menu__item {
+  margin: 0;
+  line-height: $lineheight-smaller;
+  color: rgba($color-light, 0.2);
+  cursor: pointer;
+  transition: color .2s;
+
+  @media #{$breakpoint-medium-large} {
+    padding: 0;
+    margin: $margin-small;
+    line-height: $lineheight-smallest;
+  }
+
+  &.active {
+    background-image: url("../../images/arrow--white.svg");
+    background-repeat: no-repeat;
+    background-size: 0.8rem auto;
+    background-position: right center;
+
+    @media #{$breakpoint-medium} {
+      background: none;
+    }
+  }
+
+  &.active,
+  &:hover {
+    color: $color-border;
+  }
+}
+
+.sidebar-panel--clear {
+  z-index: 1;
+  height: 100vh;
+
+  @media #{$breakpoint-medium} {
+    height: auto;
+  }
+
+  &:after {
+    content: "";
+    height: 100vh;
+    background-color: $color-dark-off;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+
+    @media #{$breakpoint-medium} {
+      display: none;
+    }
+  }
+}
+
+// Prevent full height hack covering these elements
+.related-reports,
+.signup-cta,
+.support-cta,
+.site-footer {
+  position: relative;
+  z-index: 2;
+}
+
+.sidebar {
+  // Remove any negative margins and column expanding code
+  .field-name-body {
+    * {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    img {
+      width: auto !important;
+    }
+  }
+}
