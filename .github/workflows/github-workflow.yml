@@ -21,11 +21,12 @@ jobs:
       - name: List output files
         run: find build/ -print
 
-      - name: 📂 Sync files
+      - name: 📂 Sync files to production
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        if: github.ref == 'refs/heads/main'
         with:
           server: ftp.fahrenheit.sui-inter.net
           username: tnh
           password: bre5mgc4dtw1gjc@EVE
           local-dir: build/
-          server-dir: GITHUB/
+          server-dir: embeddables/
