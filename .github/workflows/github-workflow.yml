@@ -8,10 +8,10 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v2
 
-      - name: Use Node.js 12
+      - name: Use Node.js 14
         uses: actions/setup-node@v2-beta
         with:
-          node-version: '12'
+          node-version: '14'
 
       - name: 🔨 Build Project
         run: |
@@ -24,6 +24,16 @@ jobs:
       - name: 📂 Sync files to production
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         if: github.ref == 'refs/heads/main'
+        with:
+          server: ftp.fahrenheit.sui-inter.net
+          username: tnh
+          password: bre5mgc4dtw1gjc@EVE
+          local-dir: build/
+          server-dir: embeddables/
+
+      - name: 📂 Sync files to staging
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        if: github.ref == 'refs/heads/staging'
         with:
           server: ftp.fahrenheit.sui-inter.net
           username: tnh
