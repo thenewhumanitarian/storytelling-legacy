@@ -146,7 +146,7 @@ function FloatingBubbles(props) {
         <div className={'text-3xl'}>{renderHTML(data.content)}</div>
         <motion.p
           className={
-            'absolute top-0 right-0 text-red-400 hover:bg-red-400 hover:text-white px-4 py-4 rounded-full'
+            'absolute top-0 right-0 sm:top-2 sm:right-2 text-red-400 hover:bg-red-400 hover:text-white px-4 py-4 rounded-full'
           }
           whileHover={{
             scale: 1.1
