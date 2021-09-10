@@ -43,7 +43,7 @@ jobs:
         with:
           server: ftp.fahrenheit.sui-inter.net
           username: tnh
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ env.FTP_PASSWORD }}
           local-dir: build/
           server-dir: embeddables/
 
@@ -53,6 +53,6 @@ jobs:
         with:
           server: ftp.fahrenheit.sui-inter.net
           username: tnh
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: ${{ env.FTP_PASSWORD }}
           local-dir: build/
           server-dir: staging/
