@@ -32,7 +32,7 @@ jobs:
 
       - name: 🔨 Build project
         run: |
-          npm build
+          npm run build
 
       - name: List output files
         run: find build/ -print
