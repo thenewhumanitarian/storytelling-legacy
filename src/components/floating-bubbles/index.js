@@ -139,7 +139,7 @@ function FloatingBubbles(props) {
     return (
       <div
         className={
-          'flex flex-col justify-center items-start w-full h-full absolute top-0 left-0 cursor-pointer p-8 sm:p-20'
+          'cursor-pointer p-8 sm:p-20'
         }
       >
         <h1 className={'text-5xl mb-8'}>{data.full_name}</h1>
@@ -181,7 +181,7 @@ function FloatingBubbles(props) {
             <div
               className={`${
                 group === 'all' ? 'm-0' : 'm-4'
-              } w-full h-full absolute top-0 left-0 bg-white bg-opacity-95 flex justify-center items-center`}
+              } w-full h-full fixed top-0 left-0 bg-white bg-opacity-95 flex justify-center items-center`}
               onClick={() => setCurrentActive(-1)}
             >
               <OverlayContent data={relevantData[currentActive]} />
