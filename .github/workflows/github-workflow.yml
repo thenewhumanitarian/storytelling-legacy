@@ -55,4 +55,4 @@ jobs:
           username: tnh
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: build/
-          server-dir: staging/
+          server-dir: staging/embeddables/
