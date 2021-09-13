@@ -143,7 +143,8 @@ function FloatingBubbles(props) {
         }
       >
         <h1 className={'text-5xl mb-8'}>{data.full_name}</h1>
-        <div className={'text-3xl'}>{renderHTML(data.content)}</div>
+        <hr className={'mb-8'} />
+        <div className={'flow text-3xl'}>{renderHTML(data.content)}</div>
         <motion.p
           className={
             'absolute top-0 right-0 sm:top-2 sm:right-2 text-red-400 hover:bg-red-400 hover:text-white px-4 py-4 rounded-full'

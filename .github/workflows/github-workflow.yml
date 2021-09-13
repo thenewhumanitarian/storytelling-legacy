@@ -49,7 +49,7 @@ jobs:
 
       - name: 📂 Sync files to staging
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
-        if: github.ref == 'refs/heads/staging'
+        # if: github.ref == 'refs/heads/staging'
         with:
           server: ftp.fahrenheit.sui-inter.net
           username: tnh
