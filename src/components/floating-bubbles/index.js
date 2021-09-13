@@ -139,7 +139,7 @@ function FloatingBubbles(props) {
     return (
       <div
         className={
-          'cursor-pointer p-8 sm:p-20'
+          'cursor-pointer p-8 sm:p-20 relative max-w-6xl'
         }
       >
         <h1 className={'text-5xl mb-8'}>{data.full_name}</h1>
@@ -147,7 +147,7 @@ function FloatingBubbles(props) {
         <div className={'flow text-3xl'}>{renderHTML(data.content)}</div>
         <motion.p
           className={
-            'absolute top-0 right-0 sm:top-2 sm:right-2 text-red-400 hover:bg-red-400 hover:text-white px-4 py-4 rounded-full'
+            'absolute top-0 right-0 sm:top-4 sm:right-4 text-red-400 hover:bg-red-400 hover:text-white px-4 py-4 rounded-full'
           }
           whileHover={{
             scale: 1.1
