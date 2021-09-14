@@ -168,7 +168,7 @@ function FloatingBubbles(props) {
               <Bubble
                 key={`bubble-wrapper-${i}`}
                 data={el}
-                i={i}
+                i={() => i}
                 clickHandler={clickHandler}
                 currentActive={currentActive}
               />
