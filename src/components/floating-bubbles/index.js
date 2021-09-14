@@ -149,9 +149,9 @@ function FloatingBubbles(props) {
           className={
             'absolute top-0 right-0 sm:top-4 sm:right-4 text-red-400 hover:bg-red-400 hover:text-white px-4 py-4 rounded-full'
           }
-          whileHover={{
-            scale: 1.1
-          }}
+          // whileHover={{
+          //   scale: 1.1
+          // }}
         >
           <CloseIcon />
         </motion.p>
