@@ -161,7 +161,7 @@ function FloatingBubbles(props) {
         <div
           className={`relative grid grid-cols-${mobileCols} sm:grid-cols-${desktopCols} ${
             group === 'all' ? 'w-full' : 'w-4/5'
-          } mx-auto my-8`}
+          } mx-auto my-8 lg:px-8`}
         >
           {relevantData.map((el, i) => {
             return (
