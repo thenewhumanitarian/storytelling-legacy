@@ -97,7 +97,7 @@ function FloatingBubbles(props) {
         style={{
           paddingTop: `${100}%`
         }}
-        // initial={{ y: 0 }}
+        initial={{ y: 0 }}
         animate={{
           y: currentActive > 0 ? null : [0, 5, -5, 0],
           rotate: currentActive > 0 ? null : [0, 2, -2, 0, 0]
