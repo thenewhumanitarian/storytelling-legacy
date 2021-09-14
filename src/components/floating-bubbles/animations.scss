@@ -1,0 +1,24 @@
+@for $i from 0 through 30 {
+  .bubble-#{$i} {
+    animation-delay: $i * 0.3s;
+  }
+}
+
+.bubble:not(:hover) {
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, -5px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  to {
+    transform: translate(0, -5px);
+  }
+}

@@ -6,8 +6,8 @@ import Papa from 'papaparse'
 // Imports animation library
 import { motion } from 'framer-motion'
 
-// Importing d3-array for grouping data by colour
 import './index.css'
+import './animations.scss'
 import renderHTML from 'react-render-html'
 
 export const useComponentWillMount = func => {
@@ -92,20 +92,10 @@ function FloatingBubbles(props) {
 
   const Bubble = ({ data, i, clickHandler }) => {
     return (
-      <motion.div
-        className={`relative w-full h-0`}
+      <div
+        className={`relative w-full h-0 bubble bubble-${i}`}
         style={{
           paddingTop: `${100}%`
-        }}
-        initial={{ y: 0 }}
-        animate={{
-          y: currentActive > 0 ? null : [0, 5, -5, 0],
-          rotate: currentActive > 0 ? null : [0, 2, -2, 0, 0]
-        }}
-        transition={{
-          repeat: Infinity,
-          duration: 2,
-          delay: i
         }}
         onClick={() => clickHandler(i)}
       >
@@ -128,7 +118,7 @@ function FloatingBubbles(props) {
             <p className={'font-bold text-4xl text-white'}>{data.short_name}</p>
           </motion.div>
         </div>
-      </motion.div>
+      </div>
     )
   }
 
@@ -161,12 +151,11 @@ function FloatingBubbles(props) {
           } mx-auto my-8 lg:px-8`}
         >
           {relevantData.map((el, i) => {
-            const random = Math.random() * i
             return (
               <Bubble
                 key={`bubble-wrapper-${i}`}
                 data={el}
-                i={random}
+                i={i}
                 clickHandler={clickHandler}
                 currentActive={currentActive}
               />
