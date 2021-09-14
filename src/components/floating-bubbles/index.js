@@ -105,7 +105,7 @@ function FloatingBubbles(props) {
         transition={{
           repeat: Infinity,
           duration: 2,
-          delay: i * 0.2
+          delay: i * 0.2 || Math.random() * 0.3
         }}
         onClick={() => clickHandler(i)}
       >
@@ -157,7 +157,7 @@ function FloatingBubbles(props) {
 
   return (
     <div data-iframe-height={true}>
-      {relevantData ? (
+      {relevantData.length > 0 ? (
         <div
           className={`relative grid grid-cols-${mobileCols} sm:grid-cols-${desktopCols} ${
             group === 'all' ? 'w-full' : 'w-4/5'
