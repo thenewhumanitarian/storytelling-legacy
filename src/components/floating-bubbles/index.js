@@ -105,7 +105,7 @@ function FloatingBubbles(props) {
         transition={{
           repeat: Infinity,
           duration: 2,
-          delay: 0.1 + (i * 0.2) || Math.random() * 0.3
+          delay: i
         }}
         onClick={() => clickHandler(i)}
       >
@@ -120,9 +120,6 @@ function FloatingBubbles(props) {
               background: colors[getRandomInt(0, colors.length)]
             }}
             whileHover={spin}
-            // whileTap={{
-            //   scale: 1.2
-            // }}
             transition={{
               ease: 'linear',
               duration: 0.25
@@ -164,11 +161,12 @@ function FloatingBubbles(props) {
           } mx-auto my-8 lg:px-8`}
         >
           {relevantData.map((el, i) => {
+            const random = Math.random() * i
             return (
               <Bubble
                 key={`bubble-wrapper-${i}`}
                 data={el}
-                i={i}
+                i={random}
                 clickHandler={clickHandler}
                 currentActive={currentActive}
               />
