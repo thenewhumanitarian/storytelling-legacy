@@ -105,7 +105,7 @@ function FloatingBubbles(props) {
         transition={{
           repeat: Infinity,
           duration: 2,
-          delay: i * 0.2 || Math.random() * 0.3
+          delay: 0.1 + (i * 0.2) || Math.random() * 0.3
         }}
         onClick={() => clickHandler(i)}
       >
