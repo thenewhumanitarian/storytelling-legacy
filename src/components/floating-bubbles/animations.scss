@@ -9,6 +9,8 @@
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  will-change: transform;
+  transform: translate(0, -5px);
 }
 
 @keyframes floating {
