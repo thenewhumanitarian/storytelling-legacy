@@ -27,3 +27,23 @@
     transform: translate(0, 0px);
   }
 }
+
+.stripes {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3) 15px,
+    rgba(0, 0, 0, 0.5) 15px,
+    rgba(0, 0, 0, 0.5) 30px
+  );
+}
+
+.stripes-narrow {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3) 10px,
+    rgba(0, 0, 0, 0.5) 10px,
+    rgba(0, 0, 0, 0.5) 20px
+  );
+}

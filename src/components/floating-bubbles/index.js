@@ -105,7 +105,7 @@ function FloatingBubbles(props) {
           }
         >
           <motion.div
-            className={`w-4/5 h-4/5 rounded-full flex justify-center items-center cursor-pointer`}
+            className={`w-4/5 h-4/5 rounded-full flex justify-center items-center cursor-pointer relative`}
             style={{
               background: colors[getRandomInt(0, colors.length)]
             }}
@@ -115,7 +115,16 @@ function FloatingBubbles(props) {
               duration: 0.25
             }}
           >
-            <p className={'font-bold text-4xl text-white'}>{data.short_name}</p>
+            {data.answered_everything === 'no' && (
+              <div
+                className={
+                  'absolute top-0 left-0 w-full h-full rounded-full z-40 stripes'
+                }
+              />
+            )}
+            <p className={'font-bold text-4xl text-white z-50'}>
+              {data.short_name}
+            </p>
           </motion.div>
         </div>
       </div>
@@ -125,8 +134,15 @@ function FloatingBubbles(props) {
   const OverlayContent = ({ data }) => {
     return (
       <div className={'cursor-pointer p-8 sm:p-20 relative max-w-6xl'}>
-        <h1 className={'text-5xl mb-8 pr-6'}>{data.full_name}</h1>
-        <hr className={'mb-8'} />
+        <h1 className={'text-5xl mb-2 pr-6'}>{data.full_name}</h1>
+        {data.answered_everything ? (
+          <p className={'italic'}>Answered all our calls for response</p>
+        ) : (
+          <p className={'italic'}>
+            Hasn't answered our latest call for response
+          </p>
+        )}
+        <hr className={'my-8'} />
         <div className={'flow text-3xl'}>{renderHTML(data.content)}</div>
         <motion.p
           className={
@@ -144,6 +160,22 @@ function FloatingBubbles(props) {
 
   return (
     <div data-iframe-height={true}>
+      <div className={'grid grid-cols-2 gap-4 flex-row sm:flex-row'}>
+        <div className={'flex flex-row items-center justify-center gap-x-2'}>
+          <div
+            className={'rounded-full w-12 h-12 sm:w-20 sm:h-20 bg-gray-400'}
+          />{' '}
+          <p className={'p-0 m-0'}>Answered all requests</p>
+        </div>
+        <div className={'flex flex-row items-center justify-center gap-x-2'}>
+          <div
+            className={
+              'rounded-full stripes-narrow w-12 h-12 sm:w-20 sm:h-20 bg-gray-400'
+            }
+          />{' '}
+          <p className={'p-0 m-0'}>Didn't answer last request</p>
+        </div>
+      </div>
       {relevantData.length > 0 ? (
         <div
           className={`relative grid grid-cols-${mobileCols} sm:grid-cols-${desktopCols} ${
@@ -164,7 +196,7 @@ function FloatingBubbles(props) {
           {currentActive >= 0 && (
             <div
               className={`${
-                group === 'all' ? 'm-0' : 'm-4'
+                group === 'all' ? 'm-0' : 'm-0'
               } w-full h-full px-3 fixed top-0 left-0 bg-white bg-opacity-95 flex justify-center items-center`}
               onClick={() => setCurrentActive(-1)}
             >
