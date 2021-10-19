@@ -161,19 +161,19 @@ function FloatingBubbles(props) {
   return (
     <div data-iframe-height={true}>
       <div className={'grid grid-cols-2 gap-4 flex-row sm:flex-row'}>
-        <div className={'flex flex-row items-center justify-center gap-x-2'}>
+        <div className={'flex flex-row items-center justify-end gap-x-2'}>
           <div
-            className={'rounded-full w-12 h-12 sm:w-20 sm:h-20 bg-gray-400'}
+            className={'sm:rounded-full w-12 h-12 sm:w-20 sm:h-20 bg-gray-400'}
           />{' '}
-          <p className={'p-0 m-0'}>Answered all requests</p>
+          <p className={'p-0 m-0 leading-tight'}>Answered all requests</p>
         </div>
-        <div className={'flex flex-row items-center justify-center gap-x-2'}>
+        <div className={'flex flex-row items-center justify-start gap-x-2'}>
           <div
             className={
-              'rounded-full stripes-narrow w-12 h-12 sm:w-20 sm:h-20 bg-gray-400'
+              'sm:rounded-full stripes-narrow w-12 h-12 sm:w-20 sm:h-20 bg-gray-400'
             }
           />{' '}
-          <p className={'p-0 m-0'}>Didn't answer last request</p>
+          <p className={'p-0 m-0 leading-tight'}>Didn't answer last request</p>
         </div>
       </div>
       {relevantData.length > 0 ? (
