@@ -50,7 +50,14 @@ function FloatingBubbles(props) {
     setCurrentActive(i)
   }
 
-  const colors = ['#9E3F53', '#4D82C1', '#40911F', '#0A103D', '#7D8FA9']
+  const colors = [
+    '#DA5931',
+    '#ECC172',
+    '#195E7D',
+    '#96B6C4',
+    '#579FA1',
+    '#DADFE5'
+  ]
 
   const Loading = () => {
     return (
@@ -107,7 +114,10 @@ function FloatingBubbles(props) {
           <motion.div
             className={`w-4/5 h-4/5 rounded-full flex justify-center items-center cursor-pointer relative`}
             style={{
-              background: colors[getRandomInt(0, colors.length)]
+              background:
+                data.answered_everything === 'no'
+                  ? colors[colors.length - 1]
+                  : colors[getRandomInt(0, colors.length - 1)]
             }}
             whileHover={spin}
             transition={{
@@ -122,7 +132,7 @@ function FloatingBubbles(props) {
                 }
               />
             )}
-            <p className={'font-bold text-4xl text-white z-50'}>
+            <p className={'font-bold text-xl sm:text-4xl text-white z-50'}>
               {data.short_name}
             </p>
           </motion.div>
@@ -160,25 +170,9 @@ function FloatingBubbles(props) {
 
   return (
     <div data-iframe-height={true}>
-      <div className={'grid grid-cols-2 gap-4 flex-row sm:flex-row'}>
-        <div className={'flex flex-row items-center justify-end gap-x-2'}>
-          <div
-            className={'sm:rounded-full w-12 h-12 sm:w-20 sm:h-20 bg-gray-400'}
-          />{' '}
-          <p className={'p-0 m-0 leading-tight'}>Answered all requests</p>
-        </div>
-        <div className={'flex flex-row items-center justify-start gap-x-2'}>
-          <div
-            className={
-              'sm:rounded-full stripes-narrow w-12 h-12 sm:w-20 sm:h-20 bg-gray-400'
-            }
-          />{' '}
-          <p className={'p-0 m-0 leading-tight'}>Didn't answer last request</p>
-        </div>
-      </div>
       {relevantData.length > 0 ? (
         <div
-          className={`relative grid grid-cols-${mobileCols} sm:grid-cols-${desktopCols} ${
+          className={`relative items-center justify-center grid grid-cols-${mobileCols} sm:grid-cols-${desktopCols} ${
             group === 'all' ? 'w-full' : 'w-4/5'
           } mx-auto my-8 lg:px-8`}
         >
@@ -207,6 +201,22 @@ function FloatingBubbles(props) {
       ) : (
         <Loading />
       )}
+      <div className={'flex justify-center items-cener flex-row sm:flex-row'}>
+        {/* <div className={'flex flex-row items-center justify-end gap-x-2'}>
+          <div
+            className={'sm:rounded-full w-12 h-12 sm:w-20 sm:h-20 bg-gray-400'}
+          />{' '}
+          <p className={'p-0 m-0 leading-tight'}>Answered all requests</p>
+        </div> */}
+        <div className={'flex flex-row items-center justify-start gap-x-2'}>
+          <div
+            className={
+              'rounded-full stripes-narrow w-12 h-12 sm:w-20 sm:h-20 bg-gray-400'
+            }
+          />{' '}
+          <p className={'p-0 m-0 leading-tight'}>Didn't answer last request</p>
+        </div>
+      </div>
     </div>
   )
 }
