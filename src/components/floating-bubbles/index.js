@@ -143,8 +143,8 @@ function FloatingBubbles(props) {
 
   const OverlayContent = ({ data }) => {
     return (
-      <div className={'cursor-pointer p-8 sm:p-20 relative max-w-6xl'}>
-        <h1 className={'text-5xl mb-2 pr-6'}>{data.full_name}</h1>
+      <div className={'cursor-pointer p-0 sm:p-5 relative max-w-6xl'}>
+        <h1 className={'text-4xl sm:text-5xl mb-2 pr-6'}>{data.full_name}</h1>
         {data.answered_everything ? (
           <p className={'italic'}>Answered all our calls for response</p>
         ) : (
@@ -152,11 +152,11 @@ function FloatingBubbles(props) {
             Hasn't answered our latest call for response
           </p>
         )}
-        <hr className={'my-8'} />
+        <hr className={'my-2 sm:my-8'} />
         <div className={'flow text-3xl'}>{renderHTML(data.content)}</div>
         <motion.p
           className={
-            'fixed top-6 right-6 sm:top-4 sm:right-4 text-red-400 hover:bg-red-400 hover:text-white px-4 py-4 rounded-full'
+            'fixed top-0 right-0 sm:top-6 sm:right-6 sm:top-4 sm:right-4 text-red-400 hover:bg-red-400 hover:text-white px-4 py-4 rounded-full'
           }
           // whileHover={{
           //   scale: 1.1
