@@ -142,10 +142,11 @@ function FloatingBubbles(props) {
   }
 
   const OverlayContent = ({ data }) => {
+    console.log(data)
     return (
       <div className={'cursor-pointer p-0 sm:p-5 relative max-w-6xl'}>
         <h1 className={'text-4xl sm:text-5xl mb-2 pr-6'}>{data.full_name}</h1>
-        {data.answered_everything ? (
+        {data.answered_everything === 'yes' ? (
           <p className={'italic'}>Answered all our calls for response</p>
         ) : (
           <p className={'italic'}>
