@@ -146,13 +146,7 @@ function FloatingBubbles(props) {
     return (
       <div className={'cursor-pointer p-0 sm:p-5 relative max-w-6xl'}>
         <h1 className={'text-4xl sm:text-5xl mb-2 pr-6'}>{data.full_name}</h1>
-        {data.answered_everything === 'yes' ? (
-          <p className={'italic'}>Answered all our calls for response</p>
-        ) : (
-          <p className={'italic'}>
-            Hasn't answered our latest call for response
-          </p>
-        )}
+        {data.headline !== '' && <p className={'italic'}>{data.headline}</p>}
         <hr className={'my-2 sm:my-8'} />
         <div className={'flow text-3xl'}>{renderHTML(data.content)}</div>
         <motion.p
@@ -202,20 +196,26 @@ function FloatingBubbles(props) {
       ) : (
         <Loading />
       )}
-      <div className={'flex justify-center items-cener flex-row sm:flex-row'}>
+      <div
+        className={
+          'flex justify-center items-center flex-col sm:flex-row px-12'
+        }
+      >
         {/* <div className={'flex flex-row items-center justify-end gap-x-2'}>
           <div
-            className={'sm:rounded-full w-12 h-12 sm:w-20 sm:h-20 bg-gray-400'}
+            className={'rounded-full w-12 h-12 sm:w-20 sm:h-20 bg-gray-400 flex-shrink-0'}
           />{' '}
           <p className={'p-0 m-0 leading-tight'}>Answered all requests</p>
         </div> */}
         <div className={'flex flex-row items-center justify-start gap-x-2'}>
           <div
             className={
-              'rounded-full stripes-narrow w-12 h-12 sm:w-20 sm:h-20 bg-gray-400'
+              'rounded-full stripes-narrow w-12 h-12 sm:w-20 sm:h-20 bg-gray-400 flex-shrink-0'
             }
           />{' '}
-          <p className={'p-0 m-0 leading-tight'}>Didn't answer last request</p>
+          <p className={'p-0 m-0 leading-tight'}>
+            Partially responded to survey questions and/or follow-ups
+          </p>
         </div>
       </div>
     </div>
