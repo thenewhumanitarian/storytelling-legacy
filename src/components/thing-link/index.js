@@ -117,7 +117,7 @@ const ThingLinkComponent = props => {
           </div>
         </div>
       )}
-      {data.showOverlay && (
+      {data.showOverlay && ( 
         <OverlayComponent
           closeHandler={() => setData({ ...data, showOverlay: false })}
           data={data.overlayData}
