@@ -3,226 +3,228 @@
 $padding-top: 10rem;
 
 @mixin even() {
-  &:nth-child(even) {
-    @content
-  }
+	&:nth-child(even) {
+		@content;
+	}
 }
 
 @mixin odd() {
-  &:nth-child(odd) {
-    @content
-  }
+	&:nth-child(odd) {
+		@content;
+	}
 }
 
-div#timeline-component{
-  .timeline-container {
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    width: 100%;
-    margin: 2rem auto;
+div#timeline-component {
+	.timeline-container {
+		font-family: 'Roboto', sans-serif;
+		padding: 10px;
+		width: 100%;
+		margin: 2rem auto;
 
-    .line-left {
-      border-left: 3px solid #9f3e52;
-      float: none;
-      width: 100%;
-    }
+		.line-left {
+			border-left: 3px solid #9f3e52;
+			float: none;
+			width: 100%;
+		}
 
-    .line {
-      height: 3px;
-      background: #9f3e52;
-      position: absolute;
-      width: 30px;
-      display: inline-block;
-    }
+		.line {
+			height: 3px;
+			background: #9f3e52;
+			position: absolute;
+			width: 30px;
+			display: inline-block;
+		}
 
-    .timeline-image {
-      width: 100%;
-      display: inline-block;
-      padding-bottom: 0;
-      padding-top: 10px;
-    }
-    .year-text {
-      font-family: 'GT Sectra Bold', serif;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-      color: #9f3e52;
-      padding-right: 1rem;
-      font-size: 2.1rem;
-      line-height: 1;
-      @media screen and (max-width: 600px) {
-        font-size: 1.4rem;
-      }
-    }
-    .title-text {
-      width: 100%;
-      background: white;
-      z-index: 999;
-      border: 2px solid #282828;
-    }
-    .title-centered {
-      font-size: 2.1rem;
-      line-height: 1.25;
-      margin: 2em 0 1em 0;
-      &.first-element {
-        margin-top: 0;
-      }
-      width: 100%;
-      display: block;
-    }
-    .event-title {
-      pointer-events: none;
-    }
-    .icon {
-      margin-left: 3px;
-    }
-    .year-container {
-      padding-left: 10px;
-      @include odd {
-        .line {
-          top: 30px;
-          right: -5px;
-        }
-        .year-text {
-          margin-top: 1rem;
-        }
-      }
-      @include even {
-        .line {
-          top: $padding-top * 1.2;
-          margin-left: -1.5rem;
-        }
-        .year-text {
-          margin-left: 2rem;
-          margin-top: 1rem;
-        }
-      }
-      &.single-event {
-        padding-left: 5px;
-        padding-right: 5px;
-        &:hover {
-          // cursor: pointer;
-        }
-        @include odd {
-          .line {
-            display: none;
-            top: 18px;
-            right: -5px;
-            width: 25px;
-          }
-          .read-more {
-            text-align: left !important;  
-          }
-        }
-        @include even {
-          .line {
-            display: none;
-            top: $padding-top * 1.07;
-            margin-left: -35px;
-          }
-        }
-      }
-    }
-  }
-  .event-tile {
-    margin: .5rem 0;
-    -webkit-transition: all 0.1s linear;
-    -moz-transition: all 0.1s linear;
-    -o-transition: all 0.1s linear;
-    transition: all 0.1s linear;
-    background: rgba(0,0,0,0.05);
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    float: none;
-    border-left: 3px solid #9f3e52;
+		.timeline-image {
+			width: 100%;
+			display: inline-block;
+			padding-bottom: 0;
+			padding-top: 10px;
+		}
+		.year-text {
+			font-family: 'GT Sectra Bold', serif;
+			font-weight: 700;
+			margin-bottom: 1.5rem;
+			color: #9f3e52;
+			padding-right: 1rem;
+			font-size: 2.1rem;
+			line-height: 1;
+			@media screen and (max-width: 600px) {
+				font-size: 1.4rem;
+			}
+		}
+		.title-text {
+			width: 100%;
+			background: white;
+			z-index: 999;
+			border: 2px solid #282828;
+		}
+		.title-centered {
+			font-size: 2.1rem;
+			line-height: 1.25;
+			margin: 2em 0 1em 0;
+			&.first-element {
+				margin-top: 0;
+			}
+			width: 100%;
+			display: block;
+		}
+		.event-title {
+			font-size: 1.8rem;
+			pointer-events: none;
+		}
+		.icon {
+			margin-left: 3px;
+		}
+		.year-container {
+			padding-left: 10px;
+			@include odd {
+				.line {
+					top: 30px;
+					right: -5px;
+				}
+				.year-text {
+					margin-top: 1rem;
+				}
+			}
+			@include even {
+				.line {
+					top: $padding-top * 1.2;
+					margin-left: -1.5rem;
+				}
+				.year-text {
+					margin-left: 2rem;
+					margin-top: 1rem;
+				}
+			}
+			&.single-event {
+				padding-left: 5px;
+				padding-right: 5px;
+				@include odd {
+					.line {
+						display: none;
+						top: 18px;
+						right: -5px;
+						width: 25px;
+					}
+					.read-more {
+						text-align: left !important;
+					}
+				}
+				@include even {
+					.line {
+						display: none;
+						top: $padding-top * 1.07;
+						margin-left: -35px;
+					}
+				}
+			}
+		}
+	}
+	.event-tile {
+		margin: 0.5rem 0;
+		-webkit-transition: all 0.1s linear;
+		-moz-transition: all 0.1s linear;
+		-o-transition: all 0.1s linear;
+		transition: all 0.1s linear;
+		background: rgba(0, 0, 0, 0.05);
+		display: inline-block;
+		padding: 1rem;
+		float: none;
+		border-top: 3px solid #9f3e52;
+    border-radius: 1px;
 
-    h3, p {
-      text-align: left;
-    }
+		h3,
+		p {
+			text-align: left;
+		}
 
-    h3 {
-      margin-bottom: 1rem;
-    }
+		h3 {
+			margin-bottom: 1rem;
+		}
 
-    @media screen and (max-width: 500px) {
-      padding: 0.3rem 0.4rem;
+		@media screen and (max-width: 500px) {
+			padding: 0.3rem 0.4rem;
 
-      h3 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-        text-align: left;
-      }
+			h3 {
+				font-size: 1.5rem;
+				margin-bottom: 0.5rem;
+				text-align: left;
+			}
 
-      p {
-        font-size: 1.2rem;
-        line-height: 1.25;
-        text-align: left;
-      }
-    }
+			p {
+				font-size: 1.2rem;
+				line-height: 1.25;
+				text-align: left;
+			}
+		}
 
-    &.by-title {
-      display: block;
-      margin-left: -1rem;
-      border: none;
-    }
-  }
-  a {
-    color: #63666a;
-    text-decoration: none;
-    font-weight: 500;
-    border-bottom: 1px solid #63666a;
+		&.by-title {
+			display: block;
+			margin-left: -1rem;
+			border: none;
+		}
+	}
+	a {
+		color: #63666a;
+		text-decoration: none;
+		font-weight: 500;
+		border-bottom: 1px solid #63666a;
 
-    &.read-more {
-      color: #9f3e52;
-      border-bottom: none;
-      display: block;
-      margin: 1rem auto;
+		&.read-more {
+			color: #9f3e52;
+			border-bottom: none;
+			display: block;
+			margin: 1rem auto;
 
-      &:hover {
-        background: none;
-        color: #9f3e52;
-      }
-    }
+			&:hover {
+				background: none;
+				color: #9f3e52;
+			}
+		}
 
-    &:hover {
-      color: white;
-      background: #63666a;
-    }
+		&:hover {
+			color: white;
+			background: #63666a;
+		}
 
-    &.image-link, &.image-link:hover {
-      border: none;
-      background: none;
-    }
-  }
-  .year-container {
-    @include even {
-      text-align: left;
-      padding-top: $padding-top;
+		&.image-link,
+		&.image-link:hover {
+			border: none;
+			background: none;
+		}
+	}
+	.year-container {
+		@include even {
+			text-align: left;
+			padding-top: $padding-top;
 
-      @media screen and (max-width: 500px) {
-        padding-right: 0;
-      }
+			@media screen and (max-width: 500px) {
+				padding-right: 0;
+			}
 
-      .event-title {
-        padding-right: 5px;
-      }
-    }
-    @include odd {
-      border-right: 5px solid #9f3e52;
-      padding-right: 1.2rem;
-      text-align: right;
+			.event-title {
+				padding-right: 5px;
+			}
+		}
+		@include odd {
+			border-right: 5px solid #9f3e52;
+			padding-right: 1.2rem;
+			text-align: right;
 
-      @media screen and (max-width: 500px) {
-        padding-left: 0;
-        padding-right: 0.8rem;
-      }
+			@media screen and (max-width: 500px) {
+				padding-left: 0;
+				padding-right: 0.8rem;
+			}
 
-      .event-title, .event-link {
-        display: block;
-        text-align: left;
-      }
-      .year-text {
-        margin-right: 1.5rem;
-      }
-    }
-  }
+			.event-title,
+			.event-link {
+				display: block;
+				text-align: left;
+			}
+			.year-text {
+				margin-right: 1.5rem;
+			}
+		}
+	}
 }
