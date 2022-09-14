@@ -14,7 +14,7 @@ const EventComponent = (props) => {
 	return (
 		<Bounce left>
 			<div
-				className={'event-tile'}
+				className={'event-tile flow'}
 				style={{display: props.data.visible === '' ? 'none' : 'block'}}
 				onClick={() => {if(props.collapsed) {setIsOpen(!isOpen)}}}>
 				{props.data.title &&
