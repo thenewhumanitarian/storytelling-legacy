@@ -34,14 +34,12 @@ const StyledDiv = styled.div`
 	}
 
 	a {
-		color: #63666a;
+		color: #a03c50;
 		text-decoration: none;
 		font-weight: 500;
-		border-bottom: 1px solid #63666a;
 
 		&:hover {
-			color: white;
-			background: #63666a;
+			text-decoration: underline
 		}
 	}
 

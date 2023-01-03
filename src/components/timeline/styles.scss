@@ -42,6 +42,7 @@ div#timeline-component {
 			padding-bottom: 0;
 			padding-top: 10px;
 		}
+
 		.year-text {
 			font-family: 'GT Sectra Bold', serif;
 			font-weight: 700;
@@ -50,57 +51,71 @@ div#timeline-component {
 			padding-right: 1rem;
 			font-size: 2.1rem;
 			line-height: 1;
+
 			@media screen and (max-width: 600px) {
 				font-size: 1.4rem;
 			}
 		}
+
 		.title-text {
 			width: 100%;
 			background: white;
 			z-index: 999;
 			border: 2px solid #282828;
 		}
+
 		.title-centered {
 			font-size: 2.1rem;
 			line-height: 1.25;
 			margin: 2em 0 1em 0;
+
 			&.first-element {
 				margin-top: 0;
 			}
+
 			width: 100%;
 			display: block;
 		}
+
 		.event-title {
 			font-size: 1.8rem;
 			pointer-events: none;
 		}
+
 		.icon {
 			margin-left: 3px;
 		}
+
 		.year-container {
 			padding-left: 10px;
+
 			@include odd {
 				.line {
 					top: 30px;
 					right: -5px;
 				}
+
 				.year-text {
 					margin-top: 1rem;
 				}
 			}
+
 			@include even {
 				.line {
 					top: $padding-top * 1.2;
 					margin-left: -1.5rem;
 				}
+
 				.year-text {
 					margin-left: 2rem;
 					margin-top: 1rem;
 				}
 			}
+
 			&.single-event {
 				padding-left: 5px;
 				padding-right: 5px;
+
 				@include odd {
 					.line {
 						display: none;
@@ -108,10 +123,12 @@ div#timeline-component {
 						right: -5px;
 						width: 25px;
 					}
+
 					.read-more {
 						text-align: left !important;
 					}
 				}
+
 				@include even {
 					.line {
 						display: none;
@@ -122,6 +139,7 @@ div#timeline-component {
 			}
 		}
 	}
+
 	.event-tile {
 		margin: 0.5rem 0;
 		background: rgba(0, 0, 0, 0.05);
@@ -174,14 +192,14 @@ div#timeline-component {
 			border: none;
 		}
 	}
+
 	a {
-		color: #63666a;
+		color: #a03c50;
 		text-decoration: none;
 		font-weight: 500;
-		border-bottom: 1px solid #63666a;
 
 		&.read-more {
-			color: #9f3e52;
+			color: #a03c50;
 			border-bottom: none;
 			display: block;
 			margin: 1rem auto;
@@ -189,12 +207,12 @@ div#timeline-component {
 			&:hover {
 				background: none;
 				color: #9f3e52;
+				text-decoration: underline
 			}
 		}
 
 		&:hover {
-			color: white;
-			background: #63666a;
+			text-decoration: underline;
 		}
 
 		&.image-link,
@@ -203,6 +221,7 @@ div#timeline-component {
 			background: none;
 		}
 	}
+
 	.year-container {
 		@include even {
 			text-align: left;
@@ -216,6 +235,7 @@ div#timeline-component {
 				padding-right: 5px;
 			}
 		}
+
 		@include odd {
 			border-right: 5px solid #9f3e52;
 			padding-right: 1.2rem;
@@ -231,6 +251,7 @@ div#timeline-component {
 				display: block;
 				text-align: left;
 			}
+
 			.year-text {
 				margin-right: 1.5rem;
 			}
