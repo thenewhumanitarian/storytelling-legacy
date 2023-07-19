@@ -39,7 +39,7 @@ const StyledDiv = styled.div`
 		font-weight: 500;
 
 		&:hover {
-			text-decoration: underline
+			text-decoration: underline;
 		}
 	}
 
@@ -61,7 +61,7 @@ const StyledDiv = styled.div`
 		position: relative;
 		-webkit-box-shadow: 0 10px 6px 10px #292929;
 		-moz-box-shadow: 0 10px 6px 10px #292929;
-		box-shadow: 0 10px 6px -6px #777;
+		box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.25);
 	}
 	.thinglink-lead {
 		font-weight: 700;
@@ -74,8 +74,8 @@ const StyledDiv = styled.div`
 		text-shadow: 2px 2px 22px rgba(255, 255, 255, 1);
 		position: absolute;
 		display: block;
-		top: 8px;
-		right: -4px;
+		top: 0;
+		right: 0;
 		font-size: 2rem;
 		color: #c92e41;
 		z-index: 9999;
@@ -115,7 +115,7 @@ const OverlayComponent = (props) => {
 							<img style={{ opacity: 0 }} src={props.data.image} alt={props.data.title} />
 						</a>
 					)}
-					<div className={`${hasImage ? 'ten' : 'sixteen'} wide column flow`}>
+					<div className={`${hasImage ? 'ten' : 'sixteen'} wide column flow`} style={{padding: '1rem 2rem'}}>
 						{data.title && <h3>{renderHTML(data.title)}</h3>}
 						{data.lead && <p>{renderHTML(data.lead)}</p>}
 						{data.text && <p className={'thinglink-text'}>{renderHTML(data.text)}</p>}
