@@ -17,6 +17,7 @@ jobs:
           node-version: '16'
 
       - name: Run react build script
+        working-directory: ./
         run: yarn && yarn build
         env:
           CI: false
