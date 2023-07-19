@@ -103,7 +103,7 @@ const ThingLinkComponent = props => {
                   top: el.coordY + '%',
                   position: 'absolute',
                   backgroundColor: el.color.includes('#') ? el.color : null,
-                  borderColor: el.color.includes('#') ? el.color : null,
+                  borderColor: el.borderColor.includes('#') ? el.borderColor : null,
                 }}
                 onClick={() => setOverlay(el)}
               >
